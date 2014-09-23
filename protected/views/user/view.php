@@ -31,12 +31,12 @@ $this->endWidget();
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
+		'username',
+		'firstname',
 		'group',
 		'status',
-		'username',
-		'password',
-		'firstname',
 		'lastname',
+		'password',
 		'salt',
 	),
 )); ?>

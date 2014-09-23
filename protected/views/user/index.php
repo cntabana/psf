@@ -59,10 +59,10 @@ $this->endWidget();
 		'group',
 		'status',
 		'username',
-		'password',
 		'firstname',
-		/*
 		'lastname',
+		/*'password',
+		
 		'salt',
 		*/
        array(

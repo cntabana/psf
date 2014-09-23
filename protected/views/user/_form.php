@@ -18,9 +18,7 @@
    <div class="control-group">		
 			<div class="span4">
 
-	<?php echo $form->textFieldRow($model,'group',array('class'=>'span5')); ?>
-
-	<?php echo $form->textFieldRow($model,'status',array('class'=>'span5')); ?>
+	
 
 	<?php echo $form->textFieldRow($model,'username',array('class'=>'span5','maxlength'=>20)); ?>
 
@@ -29,6 +27,10 @@
 	<?php echo $form->textFieldRow($model,'firstname',array('class'=>'span5','maxlength'=>20)); ?>
 
 	<?php echo $form->textFieldRow($model,'lastname',array('class'=>'span5','maxlength'=>20)); ?>
+	
+	<?php echo $form->textFieldRow($model,'group',array('class'=>'span5')); ?>
+
+	<?php echo $form->textFieldRow($model,'status',array('class'=>'span5')); ?>
 
 	<?php // echo $form->textFieldRow($model,'salt',array('class'=>'span5','maxlength'=>32)); ?>
 
