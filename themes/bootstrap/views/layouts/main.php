@@ -25,7 +25,7 @@
                 array('label'=>'Home', 'url'=>array('/site/index'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'User Management', 'url'=>array('/user'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Departments', 'url'=>array('/departments'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Request', 'url'=>array('/foodPlan'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Requests', 'url'=>array('/request'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Backup', 'url'=>array('/backup'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
