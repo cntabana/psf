@@ -52,3 +52,32 @@ Stack trace:
 REQUEST_URI=/psf/index.php?r=foodPlan
 HTTP_REFERER=http://127.0.0.1/psf/index.php?r=foodPlan
 ---
+2014/09/23 16:02:34 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "hiddenFieldRow".' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\views\request\_form.php(28): CComponent->__call('hiddenFieldRow', Array)
+#1 C:\xampp\htdocs\psf\protected\views\request\_form.php(28): TbActiveForm->hiddenFieldRow(Object(Request), 'requestdate', Array)
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\psf\protected\views\request\create.php(28): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\psf\protected\controllers\RequestController.php(79): CController->render('create', Array)
+#11 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): RequestController->actionCreate()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#21 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('request/create')
+#22 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/psf/index.php?r=request/create
+---

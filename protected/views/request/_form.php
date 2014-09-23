@@ -17,18 +17,19 @@
         		
    <div class="control-group">		
 			<div class="span4">
-
-	<?php echo $form->textAreaRow($model,'request',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
-
 	<?php echo $form->textFieldRow($model,'phonenumber',array('class'=>'span5','maxlength'=>15)); ?>
 
 	<?php echo $form->textFieldRow($model,'email',array('class'=>'span5','maxlength'=>32)); ?>
 
-	<?php echo $form->textFieldRow($model,'requestdate',array('class'=>'span5')); ?>
+	<?php echo $form->textAreaRow($model,'request',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
 
-	<?php echo $form->textFieldRow($model,'responsedate',array('class'=>'span5')); ?>
+	
 
-	<?php echo $form->textFieldRow($model,'status',array('class'=>'span5')); ?>
+	<?php echo $form->hiddenField($model,'requestdate',array('value'=>date('Y-m-d'),'class'=>'span5')); ?>
+
+	<?php echo $form->hiddenField($model,'responsedate',array('class'=>'span5')); ?>
+
+	<?php echo $form->hiddenField($model,'status',array('value'=>0,'class'=>'span5')); ?>
 
                         </div>   
   </div>
