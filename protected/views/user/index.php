@@ -56,11 +56,11 @@ $this->endWidget();
         'template'=>'{summary}{pager}{items}{pager}',
 	'columns'=>array(
 		'id',
-		'group',
-		'status',
 		'username',
 		'firstname',
 		'lastname',
+		'group',
+		'status',
 		/*'password',
 		
 		'salt',
