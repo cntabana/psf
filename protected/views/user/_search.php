@@ -17,6 +17,8 @@
 
 	<?php echo $form->textFieldRow($model,'lastname',array('class'=>'span5','maxlength'=>20)); ?>
 
+	<?php echo $form->textFieldRow($model,'idposition',array('class'=>'span5')); ?>
+
 	<?php echo $form->textFieldRow($model,'salt',array('class'=>'span5','maxlength'=>32)); ?>
 
 	<div class="form-actions">

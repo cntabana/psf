@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h1>Update Departments <?php echo $model->id; ?></h1>
+<h3>Update Departments <?php echo $model->id; ?></h3>
 <hr/>
 
 <?php 

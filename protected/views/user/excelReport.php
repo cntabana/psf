@@ -17,6 +17,8 @@
  		<th width="80px">
 		      lastname		</th>
  		<th width="80px">
+		      idposition		</th>
+ 		<th width="80px">
 		      salt		</th>
  	</tr>
 	<?php foreach($model as $row): ?>
@@ -41,6 +43,9 @@
 		</td>
        		<td>
 			<?php echo $row->lastname; ?>
+		</td>
+       		<td>
+			<?php echo $row->idposition; ?>
 		</td>
        		<td>
 			<?php echo $row->salt; ?>

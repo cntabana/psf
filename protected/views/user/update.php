@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h1>Update User <?php echo $model->id; ?></h1>
+<h3>Update User <?php echo $model->id; ?></h3>
 <hr/>
 
 <?php 
@@ -26,5 +26,6 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 ));
 $this->endWidget();
 ?>
-
+<div style='margin-left:150px'>
 <?php echo $this->renderPartial('_form',array('model'=>$model)); ?>
+</div>

@@ -6,7 +6,7 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h1>Create Departments</h1>
+<h3>Create Departments</h3>
 <hr/>
 <?php 
 $this->beginWidget('zii.widgets.CPortlet', array(

@@ -162,6 +162,9 @@ class UserController extends CController
                        if (!empty($model->lastname)) $criteria->addCondition('lastname = "'.$model->lastname.'"');
                      
                     	
+                       if (!empty($model->idposition)) $criteria->addCondition('idposition = "'.$model->idposition.'"');
+                     
+                    	
                        if (!empty($model->salt)) $criteria->addCondition('salt = "'.$model->salt.'"');
                      
                     			

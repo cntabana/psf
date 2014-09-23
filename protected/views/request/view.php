@@ -5,7 +5,7 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>View Request #<?php echo $model->id; ?></h1>
+<h3>View Request #<?php echo $model->id; ?></h3>
 <hr />
 <?php 
 $this->beginWidget('zii.widgets.CPortlet', array(

@@ -8,7 +8,7 @@
 class UserIdentity extends CUserIdentity
 {
     private $_id;
-	public $status;
+	public $_group;
         /**
          * Authenticates a user.
          * The example implementation makes sure if the username and password
@@ -30,7 +30,7 @@ class UserIdentity extends CUserIdentity
             }
             else {           
                 $this->errorCode = self::ERROR_NONE;
-				$this->setState('status', $users->status);
+				$this->setState('group', $users->group);
                 $this->_id = $users->id;
             }
             return !$this->errorCode;
@@ -38,6 +38,10 @@ class UserIdentity extends CUserIdentity
         
         public function getId() {
             return $this->_id;
+        }
+
+        public function getGroup() {
+            return $this->_group;
         }
 
 }

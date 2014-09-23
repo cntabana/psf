@@ -106,4 +106,32 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+	public function actionCitydata()
+   {
+	   //check if isAjaxRequest and the needed GET params are set 
+	   ECascadeDropDown::checkValidRequest();
+	 
+	   //load the cities for the current province id (=ECascadeDropDown::submittedKeyValue())
+	    $data = Position::model()->findAll('iddepertment=:iddepartment',array(':iddepartment'=>ECascadeDropDown::submittedKeyValue()));
+	   //Convert the data by using 
+	   //CHtml::listData, prepare the JSON-Response and Yii::app()->end 
+	   ECascadeDropDown::renderListData($data,'id', 'jobTitle');
+   
+   
+}
+
+public function actionCitydata2()
+   {
+	   //check if isAjaxRequest and the needed GET params are set 
+	   ECascadeDropDown::checkValidRequest();
+	 
+	   //load the cities for the current province id (=ECascadeDropDown::submittedKeyValue())
+	    $data = User::model()->findAll('idposition=:idposition',array(':idposition'=>ECascadeDropDown::submittedKeyValue()));
+	   //Convert the data by using 
+	   //CHtml::listData, prepare the JSON-Response and Yii::app()->end 
+	   ECascadeDropDown::renderListData($data,'id', 'firstname');
+   
+   
+}
 }

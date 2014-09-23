@@ -5,7 +5,7 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>View User #<?php echo $model->id; ?></h1>
+<h3>View User #<?php echo $model->id; ?></h3>
 <hr />
 <?php 
 $this->beginWidget('zii.widgets.CPortlet', array(
@@ -33,11 +33,12 @@ $this->endWidget();
 		'id',
 		'username',
 		'firstname',
+		'lastname',
+		'idposition0.jobTitle',
 		'group',
 		'status',
-		'lastname',
-		'password',
-		'salt',
+		//'salt',
+		//'password',
 	),
 )); ?>
 </div>

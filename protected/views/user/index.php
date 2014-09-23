@@ -18,7 +18,7 @@ $('.search-form form').submit(function(){
 
 ?>
 
-<h1>Users</h1>
+<h3>Users</h3>
 <hr />
 
 <?php 
@@ -56,13 +56,15 @@ $this->endWidget();
         'template'=>'{summary}{pager}{items}{pager}',
 	'columns'=>array(
 		'id',
+		
 		'username',
 		'firstname',
 		'lastname',
+		'idposition0.jobTitle',
 		'group',
 		'status',
-		/*'password',
-		
+		/*
+		'password',
 		'salt',
 		*/
        array(

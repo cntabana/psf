@@ -18,7 +18,7 @@ $('.search-form form').submit(function(){
 
 ?>
 
-<h1>Requests</h1>
+<h3>Requests</h3>
 <hr />
 
 <?php 
@@ -31,7 +31,7 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 	'type'=>'pills',
 	'items'=>array(
 		array('label'=>'Create', 'icon'=>'icon-plus', 'url'=>Yii::app()->controller->createUrl('create'), 'linkOptions'=>array()),
-                array('label'=>'List', 'icon'=>'icon-th-list', 'url'=>Yii::app()->controller->createUrl('index'),'active'=>true, 'linkOptions'=>array()),
+        array('label'=>'List', 'icon'=>'icon-th-list', 'url'=>Yii::app()->controller->createUrl('index'),'active'=>true, 'linkOptions'=>array()),
 		array('label'=>'Search', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button')),
 		array('label'=>'Export to PDF', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
 		array('label'=>'Export to Excel', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
@@ -56,15 +56,31 @@ $this->endWidget();
         'template'=>'{summary}{pager}{items}{pager}',
 	'columns'=>array(
 		'id',
-		'request',
+		//'request',
+		 array(
+                'name'=>'request',
+                   'header'=>'Request',
+                   'type'=>'raw',
+                  // 'value'=>'$data->nameofmd',
+				   'value'=>'CHtml::link($data["request"],Yii::app()->createUrl("request/view", array("id"=>$data["id"])))',
+                   //'htmlOptions'=>array('width'=>'40'),
+                  
+           ),
 		'phonenumber',
 		'email',
 		'requestdate',
 		'responsedate',
-		/*
 		'status',
-		*/
-       array(
+		 array(
+                'name'=>'idrequest',
+                   'header'=>'Redirect',
+                   'type'=>'raw',
+                  // 'value'=>'$data->nameofmd',
+				   'value'=>'CHtml::link("Redirect",Yii::app()->createUrl("userRequests/create", array("id"=>$data["id"])))',
+                   //'htmlOptions'=>array('width'=>'40'),
+                  
+           ),
+     /* array(
             'class'=>'bootstrap.widgets.TbButtonColumn',
 			'template' => '{view} {update} {delete}',
 			'buttons' => array(
@@ -88,7 +104,7 @@ $this->endWidget();
 				)
 			),
             'htmlOptions'=>array('style'=>'width: 116px'),
-           )
+           )*/
 	),
 )); ?>
 

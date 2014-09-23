@@ -18,7 +18,7 @@ $('.search-form form').submit(function(){
 
 ?>
 
-<h1>Departments</h1>
+<h3>Departments</h3>
 <hr />
 
 <?php 
