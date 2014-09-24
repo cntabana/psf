@@ -7,6 +7,9 @@ $this->breadcrumbs=array(
 ?>
 <hr />
 <?php
+
+$status = array('Pending','Open');
+
 $this->Widget('ext.highcharts.HighchartsWidget', array(
         'options'=>array(
             'chart'=> array('type'=>'column'),
@@ -21,4 +24,6 @@ $this->Widget('ext.highcharts.HighchartsWidget', array(
             'series' => array(array('name' => 'Counts', 'data' => $num),
         ))
      ));
+
+
 	 ?>

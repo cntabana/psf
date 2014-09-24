@@ -73,7 +73,11 @@ $link = 'CHtml::link("Redirect",Yii::app()->createUrl("userRequests/create", arr
 		'email',
 		'requestdate',
 		'responsedate',
-		'status',
+		array(
+        'name'=>'status',
+        'value'=>'Request::getStatus($data->status)',
+        'filter'=>CHtml::listData(Request::getStatuss(), 'id', 'status'),
+        ),
 		 array(
                 'name'=>'idrequest',
                    'header'=>'Redirect',
