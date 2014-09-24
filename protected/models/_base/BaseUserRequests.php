@@ -70,7 +70,9 @@ abstract class BaseUserRequests extends GxActiveRecord {
 
 	public function search() {
 		$criteria = new CDbCriteria;
-
+        if(Yii::app()->user->group == 1 ){
+        $criteria->addCondition('iduser='.Yii::app()->session['iduser']);
+		}
 		$criteria->compare('id', $this->id);
 		$criteria->compare('iduser', $this->iduser);
 		$criteria->compare('idrequest', $this->idrequest);

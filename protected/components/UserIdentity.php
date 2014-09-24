@@ -32,6 +32,7 @@ class UserIdentity extends CUserIdentity
                 $this->errorCode = self::ERROR_NONE;
 				$this->setState('group', $users->group);
                 $this->_id = $users->id;
+                Yii::app()->session['iduser'] = $users->id;
             }
             return !$this->errorCode;
         }

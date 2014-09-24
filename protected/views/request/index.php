@@ -76,7 +76,7 @@ $this->endWidget();
                    'header'=>'Redirect',
                    'type'=>'raw',
                   // 'value'=>'$data->nameofmd',
-				   'value'=>'CHtml::link("Redirect",Yii::app()->createUrl("userRequests/create", array("id"=>$data["id"])))',
+				   'value'=>'CHtml::link("Redirect",Yii::app()->createUrl("userRequests/create", array("idrequest"=>$data["id"])))',
                    //'htmlOptions'=>array('width'=>'40'),
                   
            ),

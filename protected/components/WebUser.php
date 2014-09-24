@@ -14,7 +14,9 @@ class WebUser extends CWebUser {
     $user = $this->loadUser(Yii::app()->user->id);
     return $user->status;
   }
-   
+ 
+
+
 /*function getGroup(){
     $user = $this->loadUser(Yii::app()->user->id);
     return $user->group;

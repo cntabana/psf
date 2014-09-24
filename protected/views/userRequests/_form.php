@@ -11,7 +11,7 @@
 		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
 	</p>
    <h2>
-      You want to redirect request number <?php echo $_GET['id']; ?> to :
+      You want to redirect request number <?php  if(isset($_GET['idrequest'])) echo $_GET['idrequest']; ?> to :
    </h2>
 	<?php echo $form->errorSummary($model); ?>
 
@@ -57,7 +57,12 @@
 
 		<div class="row">
 		<?php //echo $form->labelEx($model,'idrequest'); ?>
-		<?php echo $form->hiddenField($model, 'idrequest',array('value'=>$_GET['id'] )); ?>
+		<?php
+		if(isset($_GET['idrequest']))
+		    echo $form->textField($model, 'idrequest',array('value'=>$_GET['idrequest'] ));
+         else
+         	echo $form->textField($model, 'idrequest' );
+		 ?>
 		<?php //echo $form->dropDownList($model, 'idrequest', GxHtml::listDataEx(Request::model()->findAllAttributes(null, true))); ?>
 		<?php echo $form->error($model,'idrequest'); ?>
 		</div><!-- row -->
