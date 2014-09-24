@@ -75,7 +75,7 @@ abstract class BaseRequest extends GxActiveRecord {
 
 	public function search() {
 		$criteria = new CDbCriteria;
-
+        $criteria->addCondition('status=0');
 		$criteria->compare('id', $this->id);
 		$criteria->compare('request', $this->request, true);
 		$criteria->compare('phonenumber', $this->phonenumber, true);
@@ -88,4 +88,22 @@ abstract class BaseRequest extends GxActiveRecord {
 			'criteria' => $criteria,
 		));
 	}
+
+	public function searchArchive() {
+		$criteria = new CDbCriteria;
+        $criteria->addCondition('status=1');
+		$criteria->compare('id', $this->id);
+		$criteria->compare('request', $this->request, true);
+		$criteria->compare('phonenumber', $this->phonenumber, true);
+		$criteria->compare('email', $this->email, true);
+		$criteria->compare('requestdate', $this->requestdate, true);
+		$criteria->compare('responsedate', $this->responsedate, true);
+		$criteria->compare('status', $this->status);
+
+		return new CActiveDataProvider($this, array(
+			'criteria' => $criteria,
+		));
+	}
+
+
 }

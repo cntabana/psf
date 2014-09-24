@@ -59,7 +59,7 @@
 		<?php //echo $form->labelEx($model,'idrequest'); ?>
 		<?php
 		if(isset($_GET['idrequest']))
-		    echo $form->textField($model, 'idrequest',array('value'=>$_GET['idrequest'] ));
+		    echo $form->hiddenField($model, 'idrequest',array('value'=>$_GET['idrequest'] ));
          else
          	echo $form->textField($model, 'idrequest' );
 		 ?>

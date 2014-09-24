@@ -63,7 +63,7 @@ class UserRequestsController extends CController
 	public function actionCreate()
 	{
 		$model=new UserRequests;
-
+        $sql = "update request set status = 1 where id = ".$_GET['idrequest'];
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -71,6 +71,7 @@ class UserRequestsController extends CController
 		{
 			$model->attributes=$_POST['UserRequests'];
 			if($model->save())
+				Yii::app()->db->createCommand($sql)->query();
 				$this->redirect(array('view','id'=>$model->id));
 		}
 

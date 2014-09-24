@@ -2176,3 +2176,100 @@ REQUEST_URI=/psf/index.php?r=userRequests/update&id=10
 in C:\xampp\htdocs\psf\protected\views\userRequests\_form.php (14)
 in C:\xampp\htdocs\psf\protected\views\userRequests\update.php (30)
 in C:\xampp\htdocs\psf\protected\controllers\UserRequestsController.php (103)
+2014/09/24 12:12:50 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: update request set status = 1 where idrequest = .
+in C:\xampp\htdocs\psf\protected\controllers\UserRequestsController.php (74)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/09/24 12:12:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: update request set status = 1 where idrequest = ' in C:\xampp\htdocs\charisma\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\db\CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 C:\xampp\htdocs\psf\protected\controllers\UserRequestsController.php(74): CDbCommand->query()
+#2 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserRequestsController->actionCreate()
+#3 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('userRequests/cr...')
+#13 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/psf/index.php?r=userRequests/create&idrequest=1
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=userRequests/create&idrequest=1
+---
+2014/09/24 12:13:35 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'idrequest' in 'where clause'. The SQL statement executed was: update request set status = 1 where idrequest = 1.
+in C:\xampp\htdocs\psf\protected\controllers\UserRequestsController.php (74)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/09/24 12:13:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'idrequest' in 'where clause'. The SQL statement executed was: update request set status = 1 where idrequest = 1' in C:\xampp\htdocs\charisma\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\db\CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 C:\xampp\htdocs\psf\protected\controllers\UserRequestsController.php(74): CDbCommand->query()
+#2 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserRequestsController->actionCreate()
+#3 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('userRequests/cr...')
+#13 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/psf/index.php?r=userRequests/create&idrequest=1
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=userRequests/create&idrequest=1
+---
+2014/09/24 12:17:25 [error] [php] Undefined variable: data (C:\xampp\htdocs\psf\protected\views\request\index.php:53)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(869): RequestController->renderFile()
+#1 C:\xampp\htdocs\charisma\framework\web\CController.php(782): RequestController->renderPartial()
+#2 C:\xampp\htdocs\psf\protected\controllers\RequestController.php(171): RequestController->render()
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): RequestController->actionIndex()
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): RequestController->runAction()
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): RequestController->filterAccessControl()
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): RequestController->runActionWithFilters()
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): RequestController->run()
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=request
+in C:\xampp\htdocs\psf\protected\views\request\index.php (53)
+in C:\xampp\htdocs\psf\protected\controllers\RequestController.php (171)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/09/24 13:11:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archive".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('archive')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=archive
+HTTP_REFERER=http://127.0.0.1/psf/index.php
+---
+2014/09/24 13:11:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archive".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('archive')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=archive
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=archive
+---
+2014/09/24 13:12:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archive".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('archive')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=archive
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=request
+---
