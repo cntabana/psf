@@ -29,7 +29,7 @@ class RequestController extends CController
 		return array(
 		
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index','view','archive','create','update','GeneratePdf','GenerateExcel'),
+				'actions'=>array('index','view','archive','create','update','GeneratePdf','GenerateExcel','home'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -321,4 +321,6 @@ class RequestController extends CController
 		));
 
 	}
+
+	
 }

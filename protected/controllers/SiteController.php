@@ -72,6 +72,26 @@ class SiteController extends Controller
 		$this->render('contact',array('model'=>$model));
 	}
 
+
+public function actionHome()
+	    {
+        $sql = "select status,count(*) as Total   from   request  group by status";
+		$command = Yii::app()->db->createCommand($sql);         
+	    $results = $command->queryAll();      
+       
+        $lcv = 0;
+        $stat = array();
+        $counts = array();
+        foreach ($results as $result)
+        {
+            $stat[$lcv] = $result['status'];
+            $counts[] = (int)$result['Total'];
+            $lcv++;
+        }
+        
+        $this->render('home', array('status'=>$stat, 'num'=>$counts));    
+
+	} 
 	/**
 	 * Displays the login page
 	 */
@@ -92,7 +112,9 @@ class SiteController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
+		    //$this->redirect(Yii::app()->user->returnUrl);
+			$this->redirect(Yii::app()->user->returnUrl.'?r=site/home');
+			 //$this->render('/request/home',array('model'=>$model,));
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));
