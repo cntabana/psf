@@ -75,7 +75,12 @@ class SiteController extends Controller
 
 public function actionHome()
 	    {
-        $sql = "select status,count(*) as Total   from   request  group by status";
+        $sql = 'select case 
+            		when status = 0 then "Pending"
+					when status = 1 then "Open"
+					when status = 2 then "Under process"
+					when status = 3 then "Closed"
+					end status ,count(*) as Total   from   request  group by status';
 		$command = Yii::app()->db->createCommand($sql);         
 	    $results = $command->queryAll();      
        

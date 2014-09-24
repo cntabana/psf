@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 <hr />
 <?php
 
-$status = array('Pending','Open');
+//$status = array('Pending','Open');
 
 $this->Widget('ext.highcharts.HighchartsWidget', array(
         'options'=>array(
