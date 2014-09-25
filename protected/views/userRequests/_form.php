@@ -61,7 +61,7 @@
 		if(isset($_GET['idrequest']))
 		    echo $form->hiddenField($model, 'idrequest',array('value'=>$_GET['idrequest'] ));
          else
-         	echo $form->textField($model, 'idrequest' );
+         	echo $form->hiddenField($model, 'idrequest' );
 		 ?>
 		<?php //echo $form->dropDownList($model, 'idrequest', GxHtml::listDataEx(Request::model()->findAllAttributes(null, true))); ?>
 		<?php echo $form->error($model,'idrequest'); ?>

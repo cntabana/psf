@@ -59,7 +59,11 @@ $this->endWidget();
 		'iduser0.username',
 		'idrequest0.request',
 		'receiveddate',
-		'status',
+		array(
+        'name'=>'status',
+        'value'=>'Request::getStatus($data->status)',
+        'filter'=>CHtml::listData(Request::getStatuss(), 'id', 'status'),
+        ),
        array(
             'class'=>'bootstrap.widgets.TbButtonColumn',
 			'template' => '{view} {update} {delete}',

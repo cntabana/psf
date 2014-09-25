@@ -83,4 +83,24 @@ abstract class BaseUserRequests extends GxActiveRecord {
 			'criteria' => $criteria,
 		));
 	}
+	static function getStatuss()
+		{
+		return array(
+		    array('id'=>'0', 'type'=>'Pending'),
+		    array('id'=>'1', 'type'=>'Open'),
+		    array('id'=>'2', 'type'=>'Under Process'),
+		    array('id'=>'3', 'type'=>'Closed'),
+		);
+		}
+		static function getStatus($onoff)
+		{
+		if($onoff == 3) 
+		    return 'Closed';
+		if($onoff == 2) 
+		    return 'Under Process';
+		if($onoff == 1) 
+		    return 'Open';
+		else 
+		    return 'Pending';
+		}
 }
