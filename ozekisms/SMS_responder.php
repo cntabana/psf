@@ -76,7 +76,7 @@ $service = $valuearray[0];
                       $message = "Under Process";
 				 }else{
 				 	
-					  $message = "Dossier yanyu yararangiye,mushobora kureba igisubizo muri email ".$row['email'];
+					  $message = "Dossier yanyu yararangiye,mushobora kureba igisubizo muri email '".$row['email']."' ";
 
 				 }
 			     
