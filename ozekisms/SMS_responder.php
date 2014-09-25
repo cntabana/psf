@@ -3,15 +3,16 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 if(isset($_GET['sender']) and isset($_GET['msg']))
 {
-
-$msg = $_GET['msg'];
+$con = mysqli_connect("localhost","root","","psfdb");
+//$msg = "kubaza*cntabana@yahoo.fr*ndifuza kumenya amazina yanjye";//$_GET['msg'];
+//$msg = "igisubizo*13";
 
 $valuearray=explode("*",$msg);
 $service = $valuearray[0];
 
 
 
-$con = mysqli_connect("localhost","root","","psfdb");
+
 
 	if(strtolower($service) == "kubaza")
 	{
@@ -19,7 +20,7 @@ $con = mysqli_connect("localhost","root","","psfdb");
 			$request = $valuearray[2];
 			$message = "";
 			$date    = date('Y-m-d');
-			$phone   = $_GET['sender'];
+			$phone   = /$_GET['sender'];
 
 			if($email!="" and $request!="") //if($district!="" and $product!=""$)
 				{
@@ -27,10 +28,16 @@ $con = mysqli_connect("localhost","root","","psfdb");
 				    $query="insert into request(request,phonenumber,email,requestdate,status) values ('".$request."','".$phone."','".$email."','".$date."',0)";
 					$rs = mysqli_query($con,$query);
 					if($rs){
-						$message = "Twishimiye ikibazo cyanyu,tuzabasubiza vuba. Murakoze." ;
-						$queryId = "SELECT id FROM request WHERE request =".$message;
-						echo $queryId;
-						//$rs = mysqli_query($con,)
+						
+						$queryId = "SELECT id FROM request WHERE request = '".$request."' ";
+						
+						$rep = mysqli_query($con,$queryId );
+						    while($id = mysqli_fetch_array($rep))
+							{
+							 
+							 $message = "Twishimiye ikibazo cyanyu,tuzabasubiza vuba.Numero yanyu ni ".$id['id']." Murakoze." ;
+							}
+
 					}else{
 
 						$message = "........ error";
@@ -84,9 +91,9 @@ $con = mysqli_connect("localhost","root","","psfdb");
 	}
 	
 	
-echo "{SMS:TEXT}{}{+250788543310}{".$_GET['sender']."}{".$message."}";
-
+   echo "{SMS:TEXT}{}{+250788543310}{".$_GET['sender']."}{".$message."}";
+mysqli_close($con);
 }
 
-mysqli_close($con);
+
 ?>
