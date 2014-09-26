@@ -56,38 +56,43 @@ $this->endWidget();
         'template'=>'{summary}{pager}{items}{pager}',
 	'columns'=>array(
 		'id',
-		'iduser0.username',
-		'idrequest0.request',
-		'receiveddate',
+			'receiveddate',
 		array(
         'name'=>'status',
         'value'=>'Request::getStatus($data->status)',
         'filter'=>CHtml::listData(Request::getStatuss(), 'id', 'status'),
         ),
+		 array(
+                'name'=>'idrequest0.request',
+                   'header'=>'Request',
+                   'type'=>'raw',
+                  // 'value'=>'$data->nameofmd',
+				   'value'=>'CHtml::link("View Request",Yii::app()->createUrl("userRequests/view", array("id"=>$data["id"])))',
+                   //'htmlOptions'=>array('width'=>'40'),
+                  
+           ),
+		  array(
+                
+                   'header'=>'Reponse',
+                   'type'=>'raw',
+                   'value'=>'CHtml::link("Response",Yii::app()->createUrl("response/create", array("idrequest"=>$data["idrequest"])))',
+                   //'htmlOptions'=>array('width'=>'40'),
+                  
+           ),
+	
        array(
             'class'=>'bootstrap.widgets.TbButtonColumn',
-			'template' => '{view} {update} {delete}',
+			'template' => '{update}',
 			'buttons' => array(
-			      'view' => array(
-					'label'=> 'View',
+			      'update' => array(
+					'label'=> 'Redirect',
 					'options'=>array(
-						'class'=>'btn btn-small view'
-					)
-				),	
-                              'update' => array(
-					'label'=> 'Update',
-					'options'=>array(
-						'class'=>'btn btn-small update'
+						'class'=>'btn btn-small update1'
 					)
 				),
-				'delete' => array(
-					'label'=> 'Delete',
-					'options'=>array(
-						'class'=>'btn btn-small delete'
-					)
-				)
+				
 			),
-            'htmlOptions'=>array('style'=>'width: 116px'),
+            'htmlOptions'=>array('style'=>'width: 100px'),
            )
 	),
 )); ?>

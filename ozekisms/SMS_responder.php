@@ -22,7 +22,7 @@ $service = $valuearray[0];
 			$date    = date('Y-m-d');
 			$phone   = /$_GET['sender'];
 
-			if($email!="" and $request!="") //if($district!="" and $product!=""$)
+			if($request!="") //if($district!="" and $product!=""$)
 				{
 				//query from database 
 				    $query="insert into request(request,phonenumber,email,requestdate,status) values ('".$request."','".$phone."','".$email."','".$date."',0)";
