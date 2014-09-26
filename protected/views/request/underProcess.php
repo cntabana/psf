@@ -54,7 +54,7 @@ $this->endWidget();
 $link = 'CHtml::link("Redirect",Yii::app()->createUrl("userRequests/create", array("idrequest"=>$data["id"])))';
  $this->widget('bootstrap.widgets.TbGridView',array(
 	'id'=>'request-grid',
-	'dataProvider'=>$model->searchArchive(),
+	'dataProvider'=>$model->searchUnderProcess(),
         'type'=>'striped bordered condensed',
         'template'=>'{summary}{pager}{items}{pager}',
 	'columns'=>array(
@@ -78,15 +78,7 @@ $link = 'CHtml::link("Redirect",Yii::app()->createUrl("userRequests/create", arr
         'value'=>'Request::getStatus($data->status)',
         'filter'=>CHtml::listData(Request::getStatuss(), 'id', 'status'),
         ),
-		array(
-                'name'=>'idrequest',
-                   'header'=>'Redirect',
-                   'type'=>'raw',
-                  // 'value'=>'$data->nameofmd',
-				   'value'=>$link,
-                   //'htmlOptions'=>array('width'=>'40'),
-                  
-           ),   
+		   
 	),
 )); ?>
 

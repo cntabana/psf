@@ -29,7 +29,7 @@ class RequestController extends CController
 		return array(
 		
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index','view','archive','closed','create','update','GeneratePdf','GenerateExcel','home'),
+				'actions'=>array('index','newRequest','underProcess','view','archive','closed','create','update','GeneratePdf','GenerateExcel','home'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -48,6 +48,10 @@ class RequestController extends CController
 	 */
 	public function actionView($id)
 	{
+		$date = date('Y-m-d');
+		$sql = "update request set status = 1 ,responsedate ='".$date."' where id = ".$id;
+        echo $sql;
+        Yii::app()->db->createCommand($sql)->query();
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
@@ -367,6 +371,104 @@ class RequestController extends CController
        
 
                 $this->render('closed',array(
+			'model'=>$model,
+		));
+
+	}
+
+	/**
+	 * Lists all models.
+	 */
+	public function actionNewRequest()
+	{
+            $session=new CHttpSession;
+            $session->open();		
+            $criteria = new CDbCriteria();            
+
+                $model=new Request('searchNewRequest');
+                $model->unsetAttributes();  // clear any default values
+
+                if(isset($_GET['Request']))
+		{
+                        $model->attributes=$_GET['Request'];
+			
+			
+                   	
+                       if (!empty($model->id)) $criteria->addCondition('id = "'.$model->id.'"');
+                     
+                    	
+                       if (!empty($model->request)) $criteria->addCondition('request = "'.$model->request.'"');
+                     
+                    	
+                       if (!empty($model->phonenumber)) $criteria->addCondition('phonenumber = "'.$model->phonenumber.'"');
+                     
+                    	
+                       if (!empty($model->email)) $criteria->addCondition('email = "'.$model->email.'"');
+                     
+                    	
+                       if (!empty($model->requestdate)) $criteria->addCondition('requestdate = "'.$model->requestdate.'"');
+                     
+                    	
+                       if (!empty($model->responsedate)) $criteria->addCondition('responsedate = "'.$model->responsedate.'"');
+                     
+                    	
+                       if (!empty($model->status)) $criteria->addCondition('status = "'.$model->status.'"');
+                     
+                    			
+		}
+                 $session['Request_records']=Request::model()->findAll($criteria); 
+       
+
+                $this->render('newRequests',array(
+			'model'=>$model,
+		));
+
+	}
+
+	/**
+	 * Lists all models.
+	 */
+	public function actionUnderProcess()
+	{
+            $session=new CHttpSession;
+            $session->open();		
+            $criteria = new CDbCriteria();            
+
+                $model=new Request('searchUnderProcess');
+                $model->unsetAttributes();  // clear any default values
+
+                if(isset($_GET['Request']))
+		{
+                        $model->attributes=$_GET['Request'];
+			
+			
+                   	
+                       if (!empty($model->id)) $criteria->addCondition('id = "'.$model->id.'"');
+                     
+                    	
+                       if (!empty($model->request)) $criteria->addCondition('request = "'.$model->request.'"');
+                     
+                    	
+                       if (!empty($model->phonenumber)) $criteria->addCondition('phonenumber = "'.$model->phonenumber.'"');
+                     
+                    	
+                       if (!empty($model->email)) $criteria->addCondition('email = "'.$model->email.'"');
+                     
+                    	
+                       if (!empty($model->requestdate)) $criteria->addCondition('requestdate = "'.$model->requestdate.'"');
+                     
+                    	
+                       if (!empty($model->responsedate)) $criteria->addCondition('responsedate = "'.$model->responsedate.'"');
+                     
+                    	
+                       if (!empty($model->status)) $criteria->addCondition('status = "'.$model->status.'"');
+                     
+                    			
+		}
+                 $session['Request_records']=Request::model()->findAll($criteria); 
+       
+
+                $this->render('underProcess',array(
 			'model'=>$model,
 		));
 

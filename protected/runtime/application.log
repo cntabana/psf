@@ -3147,3 +3147,42 @@ Stack trace:
 REQUEST_URI=/psf/index.php?r=request/closed
 HTTP_REFERER=http://127.0.0.1/psf/index.php?r=request/archive
 ---
+2014/09/26 21:47:59 [error] [php] Undefined variable: date (C:\xampp\htdocs\psf\protected\controllers\RequestController.php:51)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): RequestController->runAction()
+#3 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): RequestController->filterAccessControl()
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(265): RequestController->runActionWithFilters()
+#9 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): RequestController->run()
+#10 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=request/view&id=12
+in C:\xampp\htdocs\psf\protected\controllers\RequestController.php (51)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/09/26 22:01:50 [error] [exception.CException] exception 'CException' with message 'RequestController cannot find the requested view "underProcess".' in C:\xampp\htdocs\charisma\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('underProcess', Array, true)
+#1 C:\xampp\htdocs\psf\protected\controllers\RequestController.php(473): CController->render('underProcess', Array)
+#2 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): RequestController->actionUnderProcess()
+#3 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('underProcess')
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('request/underPr...')
+#13 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/psf/index.php?r=request/underProcess
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=request/archive
+---

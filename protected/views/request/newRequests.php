@@ -54,7 +54,7 @@ $this->endWidget();
 $link = 'CHtml::link("Redirect",Yii::app()->createUrl("userRequests/create", array("idrequest"=>$data["id"])))';
  $this->widget('bootstrap.widgets.TbGridView',array(
 	'id'=>'request-grid',
-	'dataProvider'=>$model->searchArchive(),
+	'dataProvider'=>$model->searchNewRequest(),
         'type'=>'striped bordered condensed',
         'template'=>'{summary}{pager}{items}{pager}',
 	'columns'=>array(
@@ -78,7 +78,7 @@ $link = 'CHtml::link("Redirect",Yii::app()->createUrl("userRequests/create", arr
         'value'=>'Request::getStatus($data->status)',
         'filter'=>CHtml::listData(Request::getStatuss(), 'id', 'status'),
         ),
-		array(
+		 array(
                 'name'=>'idrequest',
                    'header'=>'Redirect',
                    'type'=>'raw',
@@ -86,7 +86,32 @@ $link = 'CHtml::link("Redirect",Yii::app()->createUrl("userRequests/create", arr
 				   'value'=>$link,
                    //'htmlOptions'=>array('width'=>'40'),
                   
-           ),   
+           ),
+     /* array(
+            'class'=>'bootstrap.widgets.TbButtonColumn',
+			'template' => '{view} {update} {delete}',
+			'buttons' => array(
+			      'view' => array(
+					'label'=> 'View',
+					'options'=>array(
+						'class'=>'btn btn-small view'
+					)
+				),	
+                              'update' => array(
+					'label'=> 'Update',
+					'options'=>array(
+						'class'=>'btn btn-small update'
+					)
+				),
+				'delete' => array(
+					'label'=> 'Delete',
+					'options'=>array(
+						'class'=>'btn btn-small delete'
+					)
+				)
+			),
+            'htmlOptions'=>array('style'=>'width: 116px'),
+           )*/
 	),
 )); ?>
 

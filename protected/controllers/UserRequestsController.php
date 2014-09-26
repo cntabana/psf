@@ -51,6 +51,9 @@ class UserRequestsController extends CController
 	 */
 	public function actionView($id)
 	{
+		
+       
+
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
@@ -63,7 +66,8 @@ class UserRequestsController extends CController
 	public function actionCreate()
 	{
 		$model=new UserRequests;
-        $sql = "update request set status = 1 where id = ".$_GET['idrequest'];
+		$date = date('Y-m-d');
+        $sql = "update request set status = 2 ,responsedate ='".$date."' where id = ".$_GET['idrequest'];
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 

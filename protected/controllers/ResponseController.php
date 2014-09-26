@@ -51,6 +51,7 @@ class ResponseController extends CController
 	 */
 	public function actionView($id)
 	{
+		
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
@@ -70,7 +71,8 @@ class ResponseController extends CController
 		if(isset($_POST['Response']))
 		{
 			$model->attributes=$_POST['Response'];
-			 $sql = "update request set status = 2 where id = ".$_GET['idrequest'];
+			$date = date('Y-m-d');
+            $sql = "update request set status = 3 ,responsedate ='".$date."' where id = ".$_GET['idrequest'];
 			if($model->save())
 				Yii::app()->db->createCommand($sql)->query();
 				$this->redirect(array('view','id'=>$model->id));
