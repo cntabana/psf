@@ -71,10 +71,26 @@ class ResponseController extends CController
 		if(isset($_POST['Response']))
 		{
 			$model->attributes=$_POST['Response'];
+			//$email = "ntabanacoco@gmail.com";
 			$date = date('Y-m-d');
             $sql = "update request set status = 3 ,responsedate ='".$date."' where id = ".$_GET['idrequest'];
+            $sql1 = "update user_requests set status = 3  where idrequest = ".$_GET['idrequest'];
 			if($model->save())
 				Yii::app()->db->createCommand($sql)->query();
+			    Yii::app()->db->createCommand($sql1)->query();
+				/*if($model->validate())
+				{
+					$name='=?UTF-8?B?'.base64_encode("PSF").'?=';
+					$subject='=?UTF-8?B?'.base64_encode("Reponse yanyu").'?=';
+					$headers="From: $name <{$email}>\r\n".
+						"Reply-To: {$email}\r\n".
+						"MIME-Version: 1.0\r\n".
+						"Content-Type: text/plain; charset=UTF-8";
+
+					mail(Yii::app()->params['adminEmail'],$subject,$model->response,$headers);
+					Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+					$this->refresh();
+				}*/
 				$this->redirect(array('view','id'=>$model->id));
 		}
 

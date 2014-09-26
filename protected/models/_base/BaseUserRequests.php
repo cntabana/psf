@@ -72,6 +72,24 @@ abstract class BaseUserRequests extends GxActiveRecord {
 		$criteria = new CDbCriteria;
         if(Yii::app()->user->group == 1 ){
         $criteria->addCondition('iduser='.Yii::app()->session['iduser']);
+         $criteria->addCondition('status=1');
+		}
+		$criteria->compare('id', $this->id);
+		$criteria->compare('iduser', $this->iduser);
+		$criteria->compare('idrequest', $this->idrequest);
+		$criteria->compare('receiveddate', $this->receiveddate, true);
+		$criteria->compare('status', $this->status);
+
+		return new CActiveDataProvider($this, array(
+			'criteria' => $criteria,
+		));
+	}
+
+	public function searchSent() {
+		$criteria = new CDbCriteria;
+        if(Yii::app()->user->group == 1 ){
+        $criteria->addCondition('iduser='.Yii::app()->session['iduser']);
+         $criteria->addCondition('status=3');
 		}
 		$criteria->compare('id', $this->id);
 		$criteria->compare('iduser', $this->iduser);
@@ -86,21 +104,15 @@ abstract class BaseUserRequests extends GxActiveRecord {
 	static function getStatuss()
 		{
 		return array(
-		    array('id'=>'0', 'type'=>'Pending'),
 		    array('id'=>'1', 'type'=>'Open'),
-		    array('id'=>'2', 'type'=>'Under Process'),
 		    array('id'=>'3', 'type'=>'Closed'),
 		);
 		}
 		static function getStatus($onoff)
 		{
-		if($onoff == 3) 
-		    return 'Closed';
-		if($onoff == 2) 
-		    return 'Under Process';
 		if($onoff == 1) 
 		    return 'Open';
 		else 
-		    return 'Pending';
+		    return 'Closed';
 		}
 }

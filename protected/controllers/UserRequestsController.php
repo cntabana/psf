@@ -27,17 +27,14 @@ class UserRequestsController extends CController
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
+		
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','GeneratePdf','GenerateExcel'),
-				'users'=>array('*'),
+				'actions'=>array('index','view','sent','create','update','GeneratePdf','GenerateExcel'),
+				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('*'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -166,6 +163,50 @@ class UserRequestsController extends CController
        
 
                 $this->render('index',array(
+			'model'=>$model,
+		));
+
+	}
+
+
+/**
+	 * Lists all models.
+	 */
+	public function actionSent()
+	{
+            $session=new CHttpSession;
+            $session->open();		
+            $criteria = new CDbCriteria();            
+
+                $model=new UserRequests('searchSent');
+                $model->unsetAttributes();  // clear any default values
+
+                if(isset($_GET['UserRequests']))
+		{
+                        $model->attributes=$_GET['UserRequests'];
+			
+			
+                   	
+                       if (!empty($model->id)) $criteria->addCondition('id = "'.$model->id.'"');
+                     
+                    	
+                       if (!empty($model->iduser)) $criteria->addCondition('iduser = "'.$model->iduser.'"');
+                     
+                    	
+                       if (!empty($model->idrequest)) $criteria->addCondition('idrequest = "'.$model->idrequest.'"');
+                     
+                    	
+                       if (!empty($model->receiveddate)) $criteria->addCondition('receiveddate = "'.$model->receiveddate.'"');
+                     
+                    	
+                       if (!empty($model->status)) $criteria->addCondition('status = "'.$model->status.'"');
+                     
+                    			
+		}
+                 $session['UserRequests_records']=UserRequests::model()->findAll($criteria); 
+       
+
+                $this->render('sent',array(
 			'model'=>$model,
 		));
 

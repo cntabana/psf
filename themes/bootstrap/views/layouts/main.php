@@ -51,6 +51,7 @@ if(yii::app()->user->group == 2){
             'items'=>array(
                 array('label'=>'Home', 'url'=>array('/site/home'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'User Requests', 'url'=>array('/userRequests'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Sent', 'url'=>array('/userRequests/sent'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Response', 'url'=>array('/response'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)

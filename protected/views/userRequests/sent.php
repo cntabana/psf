@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	'Responses',
+	'User Requests',
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -9,7 +9,7 @@ $('.search-button').click(function(){
     return false;
 });
 $('.search-form form').submit(function(){
-    $.fn.yiiGridView.update('response-grid', {
+    $.fn.yiiGridView.update('user-requests-grid', {
         data: $(this).serialize()
     });
     return false;
@@ -18,7 +18,7 @@ $('.search-form form').submit(function(){
 
 ?>
 
-<h1>Responses</h1>
+<h3>User Requests</h3>
 <hr />
 
 <?php 
@@ -50,34 +50,29 @@ $this->endWidget();
 
 
 <?php $this->widget('bootstrap.widgets.TbGridView',array(
-	'id'=>'response-grid',
-	'dataProvider'=>$model->search(),
+	'id'=>'user-requests-grid',
+	'dataProvider'=>$model->searchSent(),
         'type'=>'striped bordered condensed',
         'template'=>'{summary}{pager}{items}{pager}',
 	'columns'=>array(
-		//'idrequest',
-		'response',
-		//'response_date',
-       array(
-            'class'=>'bootstrap.widgets.TbButtonColumn',
-			'template' => '{view}  {delete}',
-			'buttons' => array(
-			      'view' => array(
-					'label'=> 'View',
-					'options'=>array(
-						'class'=>'btn btn-small view'
-					)
-				),	
-                
-				'delete' => array(
-					'label'=> 'Delete',
-					'options'=>array(
-						'class'=>'btn btn-small delete'
-					)
-				)
-			),
-            'htmlOptions'=>array('style'=>'width: 80px'),
-           )
+		'id',
+			'receiveddate',
+		array(
+        'name'=>'status',
+        'value'=>'Request::getStatus($data->status)',
+        'filter'=>CHtml::listData(Request::getStatuss(), 'id', 'status'),
+        ),
+		 array(
+                'name'=>'idrequest0.request',
+                   'header'=>'Request',
+                   'type'=>'raw',
+                  // 'value'=>'$data->nameofmd',
+				   'value'=>'CHtml::link("View Request",Yii::app()->createUrl("userRequests/view", array("id"=>$data["id"])))',
+                   //'htmlOptions'=>array('width'=>'40'),
+                  
+           ),
+		 	
+      
 	),
 )); ?>
 
