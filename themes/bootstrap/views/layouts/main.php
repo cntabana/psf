@@ -67,8 +67,9 @@ else{
             'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
                 array('label'=>'Home', 'url'=>array('/site/home'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Requests', 'url'=>array('/request'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Archive', 'url'=>array('/request/archive'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Pending Requests', 'url'=>array('/request'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Open Requests', 'url'=>array('/request/archive'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Closed Requests', 'url'=>array('/request/closed'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
             ),

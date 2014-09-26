@@ -27,7 +27,7 @@
 		'model'=>$model,
 		'attribute'=>'response',
 		'editorTemplate'=>'full',
-		'htmlOptions'=>array('rows'=>6, 'cols'=>50, 'class'=>'tinym0ce'),
+		'htmlOptions'=>array('rows'=>6, 'cols'=>50, 'class'=>'tinymce'),
 		'options' => array(
 		'theme_advanced_buttons1' =>
 		'undo,redo,|,bold,italic,underline,|,justifyleft,justifycenter,justifyright,justifyfull,|,outdent, indent,|,advhr,|,sub,sup,|,bullist,numlist,|,formatselect,fontselect,fontsizeselect,|,cut,copy,paste,pastetext,pasteword,|,search,replace,',

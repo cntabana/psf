@@ -70,7 +70,9 @@ class ResponseController extends CController
 		if(isset($_POST['Response']))
 		{
 			$model->attributes=$_POST['Response'];
+			 $sql = "update request set status = 2 where id = ".$_GET['idrequest'];
 			if($model->save())
+				Yii::app()->db->createCommand($sql)->query();
 				$this->redirect(array('view','id'=>$model->id));
 		}
 

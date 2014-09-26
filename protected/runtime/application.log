@@ -3136,3 +3136,14 @@ REQUEST_URI=/psf/index.php?r=response/update&id=6
 in C:\xampp\htdocs\psf\protected\views\response\_form.php (18)
 in C:\xampp\htdocs\psf\protected\views\response\update.php (30)
 in C:\xampp\htdocs\psf\protected\controllers\ResponseController.php (103)
+2014/09/26 17:48:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "closed".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('closed')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('closed')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('request/closed')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=request/closed
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=request/archive
+---

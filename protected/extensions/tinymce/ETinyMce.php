@@ -197,7 +197,7 @@ class ETinyMce extends CInputWidget
     *
     * @var array
     */
-   private $switchLabels = array(0=>'Text mode', 1=>'Text mode');
+   private $switchLabels = array(0=>'Text mode', 1=>'HTML mode');
 
    /**
     * Wheter to use the HTML->plain text mode switch.
