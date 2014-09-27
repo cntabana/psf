@@ -3608,3 +3608,187 @@ Stack trace:
 REQUEST_URI=/psf/index.php?r=userRequests/sent
 HTTP_REFERER=http://127.0.0.1/psf/index.php?r=userRequests/sent
 ---
+2014/09/27 16:00:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\psf\protected\controllers\ResponseController.php:210
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\controllers\ResponseController.php(136): ResponseController->loadModel('24')
+#1 [internal function]: ResponseController->actionDelete('24')
+#2 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ResponseController), Array)
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ResponseController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('delete')
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('response/delete')
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/psf/index.php?ajax=response-grid&id=24&r=response%2Fdelete
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=response/index
+---
+2014/09/27 16:00:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\psf\protected\controllers\ResponseController.php:210
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\controllers\ResponseController.php(136): ResponseController->loadModel('26')
+#1 [internal function]: ResponseController->actionDelete('26')
+#2 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ResponseController), Array)
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ResponseController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('delete')
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('response/delete')
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/psf/index.php?ajax=response-grid&id=26&r=response%2Fdelete
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=response/index
+---
+2014/09/27 16:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\psf\protected\controllers\ResponseController.php:210
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\controllers\ResponseController.php(136): ResponseController->loadModel('27')
+#1 [internal function]: ResponseController->actionDelete('27')
+#2 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ResponseController), Array)
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ResponseController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('delete')
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('response/delete')
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/psf/index.php?ajax=response-grid&id=27&r=response%2Fdelete
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=response/index
+---
+2014/09/27 16:00:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\psf\protected\controllers\ResponseController.php:210
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\controllers\ResponseController.php(136): ResponseController->loadModel('31')
+#1 [internal function]: ResponseController->actionDelete('31')
+#2 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ResponseController), Array)
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ResponseController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('delete')
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('response/delete')
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/psf/index.php?ajax=response-grid&id=31&r=response%2Fdelete
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=response/index
+---
+2014/09/27 16:00:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\psf\protected\controllers\ResponseController.php:210
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\controllers\ResponseController.php(136): ResponseController->loadModel('33')
+#1 [internal function]: ResponseController->actionDelete('33')
+#2 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ResponseController), Array)
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ResponseController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('delete')
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('response/delete')
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/psf/index.php?ajax=response-grid&id=33&r=response%2Fdelete
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=response/index
+---
+2014/09/27 16:00:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\psf\protected\controllers\ResponseController.php:210
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\controllers\ResponseController.php(136): ResponseController->loadModel('34')
+#1 [internal function]: ResponseController->actionDelete('34')
+#2 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ResponseController), Array)
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ResponseController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('delete')
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('response/delete')
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/psf/index.php?ajax=response-grid&id=34&r=response%2Fdelete
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=response/index
+---
+2014/09/27 16:00:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\psf\protected\controllers\ResponseController.php:210
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\controllers\ResponseController.php(136): ResponseController->loadModel('35')
+#1 [internal function]: ResponseController->actionDelete('35')
+#2 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ResponseController), Array)
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ResponseController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('delete')
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('response/delete')
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/psf/index.php?ajax=response-grid&id=35&r=response%2Fdelete
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=response/index
+---
+2014/09/27 16:00:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\psf\protected\controllers\ResponseController.php:210
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\controllers\ResponseController.php(136): ResponseController->loadModel('36')
+#1 [internal function]: ResponseController->actionDelete('36')
+#2 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ResponseController), Array)
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ResponseController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('delete')
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('response/delete')
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/psf/index.php?ajax=response-grid&id=36&r=response%2Fdelete
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=response/index
+---
+2014/09/27 16:01:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "requests".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('requests')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=requests
+---

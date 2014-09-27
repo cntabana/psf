@@ -8,7 +8,7 @@
 	<?php echo CHtml::encode($data->idrequest); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('response')); ?>:</b>
+	<b><?php echo CHtml::encode(strip_tags($data->getAttributeLabel('response'))).'coco'; ?>:</b>
 	<?php echo CHtml::encode($data->response); ?>
 	<br />
 

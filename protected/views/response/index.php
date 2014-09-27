@@ -56,7 +56,7 @@ $this->endWidget();
         'template'=>'{summary}{pager}{items}{pager}',
 	'columns'=>array(
 		//'idrequest',
-		'response',
+		strip_tags('response'),
 		//'response_date',
        array(
             'class'=>'bootstrap.widgets.TbButtonColumn',

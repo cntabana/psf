@@ -20,7 +20,7 @@ $service = $valuearray[0];
 			$request = $valuearray[2];
 			$message = "";
 			$date    = date('Y-m-d');
-			$phone   = /$_GET['sender'];
+			$phone   = $_GET['sender'];
 
 			if($request!="") //if($district!="" and $product!=""$)
 				{

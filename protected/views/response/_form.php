@@ -16,7 +16,7 @@
 		<div class="row">
 		<?php echo $form->labelEx($model,'idrequest'); ?>
 		<?php echo $form->hiddenField($model, 'idrequest',array('value'=>$_GET['idrequest'])); ?>
-		<?php echo $form->textArea($model, '', array('value'=>Request::model()->find('id='.$_GET['idrequest']),'disabled'=>'true')); ?>
+		<?php echo $form->textArea($model, '', array('value'=>Request::model()->find('id='.$_GET['idrequest']),'disabled'=>'true','filter' => 'strip_tags')); ?>
 		<?php echo $form->error($model,'idrequest'); ?>
 		</div><!-- row -->
 		
