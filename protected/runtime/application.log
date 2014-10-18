@@ -3792,3 +3792,378 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/psf/index.php?r=requests
 ---
+2014/10/18 01:15:59 [error] [exception.CException] exception 'CException' with message 'Alias "editable.EditableColumn" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\charisma\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\YiiBase.php(196): YiiBase::import('editable.Editab...', true)
+#1 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(TbGridView))
+#2 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\TbGridView.php(91): CGridView->initColumns()
+#3 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#4 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\TbGridView.php(49): CGridView->init()
+#5 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(147): TbGridView->init()
+#6 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#7 C:\xampp\htdocs\psf\protected\views\user\index.php(167): CBaseController->widget('bootstrap.widge...', Array)
+#8 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#9 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#12 C:\xampp\htdocs\psf\protected\controllers\UserController.php(177): CController->render('index', Array)
+#13 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('')
+#23 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#24 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/psf/index.php?r=user
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user/view&id=5
+---
+2014/10/18 01:42:18 [error] [php] Undefined index: password (C:\xampp\htdocs\psf\protected\controllers\UserController.php:300)
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\extensions\editable\EditableSaver.php(240): EditableSaver->raiseEvent()
+#1 C:\xampp\htdocs\psf\protected\extensions\editable\EditableSaver.php(258): EditableSaver->onBeforeUpdate()
+#2 C:\xampp\htdocs\psf\protected\extensions\editable\EditableSaver.php(164): EditableSaver->beforeUpdate()
+#3 C:\xampp\htdocs\psf\protected\controllers\UserController.php(303): EditableSaver->update()
+#4 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionUpdatePassword()
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#7 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#10 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(265): UserController->runActionWithFilters()
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): UserController->run()
+#14 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=user/updatePassword
+2014/10/18 01:43:12 [error] [php] Undefined index: User (C:\xampp\htdocs\psf\protected\controllers\UserController.php:300)
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\extensions\editable\EditableSaver.php(240): EditableSaver->raiseEvent()
+#1 C:\xampp\htdocs\psf\protected\extensions\editable\EditableSaver.php(258): EditableSaver->onBeforeUpdate()
+#2 C:\xampp\htdocs\psf\protected\extensions\editable\EditableSaver.php(164): EditableSaver->beforeUpdate()
+#3 C:\xampp\htdocs\psf\protected\controllers\UserController.php(303): EditableSaver->update()
+#4 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionUpdatePassword()
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#7 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#10 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(265): UserController->runActionWithFilters()
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): UserController->run()
+#14 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=user/updatePassword
+2014/10/18 01:43:55 [error] [php] Undefined index: User (C:\xampp\htdocs\psf\protected\controllers\UserController.php:300)
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\extensions\editable\EditableSaver.php(240): EditableSaver->raiseEvent()
+#1 C:\xampp\htdocs\psf\protected\extensions\editable\EditableSaver.php(258): EditableSaver->onBeforeUpdate()
+#2 C:\xampp\htdocs\psf\protected\extensions\editable\EditableSaver.php(164): EditableSaver->beforeUpdate()
+#3 C:\xampp\htdocs\psf\protected\controllers\UserController.php(303): EditableSaver->update()
+#4 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionUpdatePassword()
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#7 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#10 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(265): UserController->runActionWithFilters()
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): UserController->run()
+#14 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=user/updatePassword
+2014/10/18 01:48:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getStatuses".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getStatuses')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getStatuses')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('site/getStatuse...')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=site/getStatuses&_=1413589683603
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 01:48:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getStatuses".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getStatuses')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getStatuses')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('site/getStatuse...')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=site/getStatuses&_=1413589688037
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 01:51:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413589917184
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 01:52:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413589921363
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 01:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413589949775
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 01:52:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413589952367
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 01:52:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413589977043
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 01:52:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413589979550
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 01:59:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413590341608
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 01:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413590351056
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 01:59:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413590369506
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 02:00:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413590440276
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 02:00:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413590442862
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 02:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413590535110
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 02:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413590537544
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 02:02:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413590577516
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 02:03:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413590580624
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 02:09:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413590983294
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 02:09:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413590987041
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 02:10:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413591039472
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 02:10:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getGroupes".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('getGroupes')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/getGroupes')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/getGroupes&_=1413591042588
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 02:11:43 [error] [exception.CException] exception 'CException' with message 'Property "User.getGroupes" is not defined.' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\db\ar\CActiveRecord.php(145): CComponent->__get('getGroupes')
+#1 C:\xampp\htdocs\psf\protected\views\user\index.php(98): CActiveRecord->__get('getGroupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#6 C:\xampp\htdocs\psf\protected\controllers\UserController.php(177): CController->render('index', Array)
+#7 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('')
+#17 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#18 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/psf/index.php?r=user
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/18 02:12:53 [error] [exception.CException] exception 'CException' with message 'Property "User.groupes" is not defined.' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\db\ar\CActiveRecord.php(145): CComponent->__get('groupes')
+#1 C:\xampp\htdocs\psf\protected\views\user\index.php(98): CActiveRecord->__get('groupes')
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#6 C:\xampp\htdocs\psf\protected\controllers\UserController.php(177): CController->render('index', Array)
+#7 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('')
+#17 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#18 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/psf/index.php?r=user
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---

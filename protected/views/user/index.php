@@ -49,49 +49,83 @@ $this->endWidget();
 </div><!-- search-form -->
 
 
-<?php $this->widget('bootstrap.widgets.TbGridView',array(
-	'id'=>'user-grid',
-	'dataProvider'=>$model->search(),
-        'type'=>'striped bordered condensed',
-        'template'=>'{summary}{pager}{items}{pager}',
-	'columns'=>array(
-		'id',
-		
-		'username',
-		'firstname',
-		'lastname',
-		'idposition0.jobTitle',
-		'group',
-		'status',
-		/*
-		'password',
-		'salt',
-		*/
-       array(
-            'class'=>'bootstrap.widgets.TbButtonColumn',
-			'template' => '{view} {update} {delete}',
-			'buttons' => array(
-			      'view' => array(
-					'label'=> 'View',
-					'options'=>array(
-						'class'=>'btn btn-small view'
-					)
-				),	
-                              'update' => array(
-					'label'=> 'Update',
-					'options'=>array(
-						'class'=>'btn btn-small update'
-					)
-				),
-				'delete' => array(
-					'label'=> 'Delete',
-					'options'=>array(
-						'class'=>'btn btn-small delete'
-					)
-				)
-			),
-            'htmlOptions'=>array('style'=>'width: 116px'),
-           )
-	),
-)); ?>
+<? $this->widget('bootstrap.widgets.TbGridView', array(
+    'id' => 'food-grid',
+    'itemsCssClass' => 'table-bordered items',
+    'dataProvider' => $model->search(),
+    'columns'=>array(
+        array(
+           'class' => 'editable.EditableColumn',
+           'name' => 'id',
+           'headerHtmlOptions' => array('style' => 'width: 80px'),
+                         
+        ),
+        'username',
+         array( 
+            'class' => 'editable.EditableColumn',
+            'name' => 'firstname',
+            'editable' => array(
+                'type'      => 'text',
+                'url'       => $this->createUrl('user/updateFirstname'),
+                'placement' => 'right',
+            )
+          ), 
+          array( 
+            'class' => 'editable.EditableColumn',
+            'name' => 'lastname',
+            'editable' => array(
+                'type'      => 'text',
+                'url'       => $this->createUrl('user/updateLastname'),
+                'placement' => 'right',
+            )
+          ),
+          array( 
+            'class' => 'editable.EditableColumn',
+            'name' => 'password',
+            'editable' => array(
+                'type'      => 'text',
+                'url'       => $this->createUrl('user/updatePassword'),
+                'placement' => 'right',
+            )
+          ),  
+        array( 
+              'class' => 'editable.EditableColumn',
+              'name' => 'group',
+              'headerHtmlOptions' => array('style' => 'width: 100px'),
+              'editable' => array(
+                  'type'     => 'select',
+                  'url'      => $this->createUrl('user/updateGroup'),
+                  'source'   => $this->createUrl('user/groupes'),
+                  'options'  => array(    //custom display 
+                     'display' => 'js: function(value, sourceData) {
+                          var selected = $.grep(sourceData, function(o){ return value == o.value; }),
+                              colors = {1: "green", 2: "blue", 3: "red", 4: "gray"};
+                          $(this).text(selected[0].text).css("color", colors[value]);    
+                      }'
+                  ),
+                 //onsave event handler 
+                 'onSave' => 'js: function(e, params) {
+                      console && console.log("saved value: "+params.newValue);
+                 }',
+                 //source url can depend on some parameters, then use js function:
+                 /*
+                 'source' => 'js: function() {
+                      var dob = $(this).closest("td").next().find(".editable").text();
+                      var username = $(this).data("username");
+                      return "?r=site/getStatuses&user="+username+"&dob="+dob;
+                 }',
+                 'htmlOptions' => array(
+                     'data-username' => '$data->user_name'
+                 )
+                 */
+              )
+         ),
+
+        
+         
+         //editable related attribute with sorting.
+         //see http://www.yiiframework.com/wiki/281/searching-and-sorting-by-related-model-in-cgridview  
+      
+    ),
+)); 
 

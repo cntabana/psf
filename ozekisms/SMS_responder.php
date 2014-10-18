@@ -18,18 +18,15 @@ $service = $valuearray[0];
 	{
             $email   = $valuearray[1];
 			$request = $valuearray[2];
-			$message = "";
-			$date    = date('Y-m-d');
+			//$message = "";
 			$phone   = $_GET['sender'];
 
-			if($request!="") //if($district!="" and $product!=""$)
-				{
 				//query from database 
-				    $query="insert into request(request,phonenumber,email,requestdate,status) values ('".$request."','".$phone."','".$email."','".$date."',0)";
+				    
+					$query="insert into request(request,phonenumber,email,requestdate,status) values ('".$request."','".$phone."','".$email."',now(),0)";
 					$rs = mysqli_query($con,$query);
-					if($rs){
-						
-						$queryId = "SELECT id FROM request WHERE request = '".$request."' ";
+										
+						$queryId = "SELECT max(id) as id FROM request WHERE request = '".$request."' ";
 						
 						$rep = mysqli_query($con,$queryId );
 						    while($id = mysqli_fetch_array($rep))
@@ -38,26 +35,12 @@ $service = $valuearray[0];
 							 $message = "Twishimiye ikibazo cyanyu,tuzabasubiza vuba.Numero yanyu ni ".$id['id']." Murakoze." ;
 							}
 
-					}else{
-
-						$message = "........ error";
-					}
-
-
-
-				}
-			else
-			{
-					$message='wanditse nabi !!! andika "kubaza*email*request" murakoze.';
-					
-			}
 	}
 	else if(strtolower($service) == "igisubizo"){
 
                 $idrequest = $valuearray[1];
 
-                if($idrequest !="") 
-                {
+               
 				
 				$query="select status,email from request where id =".$idrequest;
 									
@@ -82,12 +65,11 @@ $service = $valuearray[0];
 			     
 				    
 			   }
-			}
-			else
-			{
-				$message='wanditse nabi !!! andika "igisubizo*idrequest" murakoze.';
+			
+			
+	}else{
 
-			}
+		$message = "Iyaaaa,wanditse nabi message yawe";
 	}
 	
 	

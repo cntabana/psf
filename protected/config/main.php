@@ -3,6 +3,7 @@
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+Yii::setPathOfAlias('editable', dirname(__FILE__).'/../extensions/editable');
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
@@ -20,6 +21,7 @@ return array(
 		'application.components.*',
 		'ext.giix-components.*', // giix components
 		'ext.cascadedropdown.ECascadeDropDown',
+		'ext.editable.*'
 	),
 
 	'modules'=>array(
@@ -54,6 +56,16 @@ return array(
 		'bootstrap'=>array(
             'class'=>'bootstrap.components.Bootstrap',
         ),
+
+             //X-editable config
+        'editable' => array(
+            'class'     => 'editable.EditableConfig',
+            'form'      => 'bootstrap',        //form style: 'bootstrap', 'jqueryui', 'plain' 
+            'mode'      => 'popup',            //mode: 'popup' or 'inline'  
+            'defaults'  => array(              //default settings for all editable elements
+               'emptytext' => 'Click to edit'
+            )
+            ),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(

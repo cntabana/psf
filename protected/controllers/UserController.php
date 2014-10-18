@@ -32,7 +32,7 @@ class UserController extends CController
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','GeneratePdf','GenerateExcel'),
+				'actions'=>array('create','update','GeneratePdf','GenerateExcel','groupes','UpdateFirstname','UpdateGroup','UpdateLastname','UpdatePassword'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -280,4 +280,42 @@ class UserController extends CController
 		$pdf->LastPage();
 		$pdf->Output("User_002.pdf", "I");
 	}
+
+	public function actionUpdateFirstname()
+    {
+		    $es = new EditableSaver('User');  //'User' is name of model to be updated
+		    $es->update();
+	}
+
+	public function actionUpdateLastname()
+	{
+		    $es = new EditableSaver('User');  //'User' is name of model to be updated
+		    $es->update();
+	}
+
+	public function actionUpdatePassword()
+	{
+		    $es = new EditableSaver('User');
+			$es->update();
+	}
+
+	public function actionUpdateGroup()
+	{
+		    $es = new EditableSaver('User');
+			$es->update();
+	}
+
+	public function actionGroupes()
+	{
+	$data = array(
+        array('value' => 1, 'text' => 'Cape Town'),
+        array('value' => 2, 'text' => 'Still Bay'),
+        array('value' => 3, 'text' => 'Johannesburg'),
+        array('value' => 4, 'text' => 'Port Elisabeth'),
+    ); 
+
+    return $data;
+	}
+
+
 }
