@@ -23,6 +23,9 @@
  * @property UserRequests[] $userRequests
  */
 abstract class BaseUser extends GxActiveRecord {
+    public $old_password;
+    public $new_password;
+    public $repeat_password;
 
 	public static function model($className=__CLASS__) {
 		return parent::model($className);
@@ -47,6 +50,10 @@ abstract class BaseUser extends GxActiveRecord {
 			array('username, firstname, lastname', 'length', 'max'=>20),
 			array('password, salt', 'length', 'max'=>32),
 			array('id, group, status, username, password, firstname, lastname, idposition, salt', 'safe', 'on'=>'search'),
+
+			array('old_password, new_password, repeat_password', 'required', 'on' => 'changePwd'),
+	        array('old_password', 'findPasswords', 'on' => 'changePwd'),
+	        array('repeat_password', 'compare', 'compareAttribute'=>'new_password', 'on'=>'changePwd'),
 		);
 	}
 
@@ -80,7 +87,10 @@ abstract class BaseUser extends GxActiveRecord {
 
 	public function search() {
 		$criteria = new CDbCriteria;
+       if(isset($_GET['p'])){
 
+        	 $criteria->addCondition('id='.Yii::app()->user->id);
+        }
 		$criteria->compare('id', $this->id);
 		$criteria->compare('group', $this->group);
 		$criteria->compare('status', $this->status);
@@ -127,4 +137,31 @@ public function beforeSave()
     $this->password = $this->hashPassword($this->password, $this->salt);
     return parent::beforeSave();
 }
+
+ public function findPasswords($attribute, $params)
+    {
+        $user = User::model()->findByPk(Yii::app()->user->id);
+        if ($user->password != md5($user->salt.$this->old_password))
+            $this->addError($attribute, 'Old password is incorrect.');
+    }
+
+ public function Passwords()
+    {
+        $user = User::model()->findByPk(Yii::app()->user->id);
+        $newpassword=md5($user->salt.$this->new_password);
+        //return "coco";
+    }
+
+    static function getGroups($k){
+
+	if($k == 2)
+		 return "Admin";
+    else if($k == 1)
+    	return 'Administrative';
+    	
+    else
+    	return 'Receptionist';
+
+}
+
 }

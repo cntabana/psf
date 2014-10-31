@@ -27,10 +27,10 @@ class UserController extends CController
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+			array('allow', 
+				'actions'=>array('index','view','Changepassword','changePasswordUser', 'UpdateBooster','UpdatePaswword'),
 				'users'=>array('*'),
-			),
+				),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update','GeneratePdf','GenerateExcel','groupes','UpdateFirstname','UpdateGroup','UpdateLastname','UpdatePassword'),
 				'users'=>array('*'),
@@ -317,5 +317,40 @@ class UserController extends CController
     return $data;
 	}
 
+public function actionChangepassword($id)
+ {      
+
+ 
+    $model = User::model()->findByAttributes(array('id'=>$id));
+    $model->setScenario('changePwd');
+ 
+ 
+     if(isset($_POST['User'])){
+ 
+        $model->attributes = $_POST['User'];
+        $valid = $model->validate();
+ 
+        if($valid){
+ 
+          $model->password = $model->new_password;
+          //$model->setAttributes($model->password);
+
+          if($model->save())
+             $this->redirect(array('user/changePasswordUser&p=profile'));
+          else
+             $this->redirect(array('changepassword','msg'=>'password not changed'));
+            }
+        }
+ 
+    $this->render('changepassword',array('model'=>$model)); 
+ }
+
+ 
+ public function actionChangePasswordUser() {
+		$dataProvider = new CActiveDataProvider('User');
+		$this->render('changePasswordUser', array(
+			'dataProvider' => $dataProvider,
+		));
+	}
 
 }

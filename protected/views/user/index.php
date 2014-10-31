@@ -49,83 +49,52 @@ $this->endWidget();
 </div><!-- search-form -->
 
 
-<? $this->widget('bootstrap.widgets.TbGridView', array(
+<? 
+
+
+$status = array(
+    array('value'=>'1', 'text'=>'Active'),
+    array('value'=>'0', 'text'=>'Inactive')
+    
+    );
+
+$this->widget('bootstrap.widgets.TbGridView', array(
     'id' => 'food-grid',
     'itemsCssClass' => 'table-bordered items',
     'dataProvider' => $model->search(),
     'columns'=>array(
         array(
-           'class' => 'editable.EditableColumn',
+          
            'name' => 'id',
            'headerHtmlOptions' => array('style' => 'width: 80px'),
                          
         ),
         'username',
          array( 
-            'class' => 'editable.EditableColumn',
+           
             'name' => 'firstname',
-            'editable' => array(
-                'type'      => 'text',
-                'url'       => $this->createUrl('user/updateFirstname'),
-                'placement' => 'right',
-            )
+            
           ), 
           array( 
-            'class' => 'editable.EditableColumn',
+            
             'name' => 'lastname',
-            'editable' => array(
-                'type'      => 'text',
-                'url'       => $this->createUrl('user/updateLastname'),
-                'placement' => 'right',
-            )
+            
           ),
-          array( 
-            'class' => 'editable.EditableColumn',
-            'name' => 'password',
-            'editable' => array(
-                'type'      => 'text',
-                'url'       => $this->createUrl('user/updatePassword'),
-                'placement' => 'right',
-            )
-          ),  
-        array( 
-              'class' => 'editable.EditableColumn',
-              'name' => 'group',
-              'headerHtmlOptions' => array('style' => 'width: 100px'),
-              'editable' => array(
-                  'type'     => 'select',
-                  'url'      => $this->createUrl('user/updateGroup'),
-                  'source'   => $this->createUrl('user/groupes'),
-                  'options'  => array(    //custom display 
-                     'display' => 'js: function(value, sourceData) {
-                          var selected = $.grep(sourceData, function(o){ return value == o.value; }),
-                              colors = {1: "green", 2: "blue", 3: "red", 4: "gray"};
-                          $(this).text(selected[0].text).css("color", colors[value]);    
-                      }'
-                  ),
-                 //onsave event handler 
-                 'onSave' => 'js: function(e, params) {
-                      console && console.log("saved value: "+params.newValue);
-                 }',
-                 //source url can depend on some parameters, then use js function:
-                 /*
-                 'source' => 'js: function() {
-                      var dob = $(this).closest("td").next().find(".editable").text();
-                      var username = $(this).data("username");
-                      return "?r=site/getStatuses&user="+username+"&dob="+dob;
-                 }',
-                 'htmlOptions' => array(
-                     'data-username' => '$data->user_name'
-                 )
-                 */
-              )
-         ),
-
+          array(
+                'name'=>'password',
+                   'header'=>'Password',
+                   'type'=>'raw',
+                   'value'=>'CHtml::link("Change Password",Yii::app()->createUrl("user/changepassword", array("id"=>$data["id"])))',
+                   
+                        
+           ),
+           array( 'name' => 'group',
+            'type' => 'raw',
+            'value' => 'User::getGroups($data["group"])',
+          ), 
         
-         
-         //editable related attribute with sorting.
-         //see http://www.yiiframework.com/wiki/281/searching-and-sorting-by-related-model-in-cgridview  
+      
       
     ),
 )); 
-
+?>

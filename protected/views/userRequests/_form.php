@@ -7,15 +7,23 @@
 ));
 ?>
 
-	<p class="note">
+	<p >
 		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
 	</p>
-   <h2>
+
+   <h2 style='color : #027f3d'>
       You want to redirect request number <?php  if(isset($_GET['idrequest'])) echo $_GET['idrequest']; ?> to :
    </h2>
-	<?php echo $form->errorSummary($model); ?>
-
-		<div class="row">
+   <br/> <br/> <br/>
+   <table width='80%' style='color : #027f3d'>
+   	<tr>  
+   		<td colspan=3>
+	     <?php echo $form->errorSummary($model); ?>
+        </td>
+    </tr>
+    <tr>
+    	<td>
+		
 		<?php 
         $modeldept= Departments::model();
 		echo $form->labelEx($modeldept,'deartment'); ?>
@@ -25,9 +33,10 @@
 		echo CHtml::activeDropDownList($modeldept, 'id', $department, array('id'=>'id_department','prompt'=>'Choose department')); 
 		?>
 		<?php echo $form->error($modeldept,'iddepartment'); ?>
-		</div><!-- row -->
-
-        <div class="row">
+	
+    </td>
+    <td>
+    
 		<?php 
         $modelpos= Position::model();
 		echo $form->labelEx($model,'position'); ?>
@@ -37,9 +46,10 @@
 		ECascadeDropDown::master('id_department')->setDependent('id_position',array('dependentLoadingLabel'=>'Loading Position ...'),'site/citydata'); 
 		?>
 		<?php echo $form->error($modelpos,'position'); ?>
-		</div><!-- row -->
+	
+</td>
+    <td>
 
-<div class="row">
 		<?php 
 		 $modeluser= User::model();
        	echo $form->labelEx($model,'iduser'); ?>
@@ -49,7 +59,7 @@
 		ECascadeDropDown::master('id_position')->setDependent('id_user',array('dependentLoadingLabel'=>'Loading User ...'),'site/citydata2'); 
 		?>
 		<?php echo $form->error($model,'iduser'); ?>
-		</div><!-- row -->
+	
 
 
 
@@ -83,10 +93,15 @@
 		<?php echo $form->hiddenField($model, 'status',array('value'=>1)); ?>
 		<?php //echo $form->error($model,'status'); ?>
 		</div><!-- row -->
-
+</td>
+    <td colspan=3>
 
 <?php
 echo GxHtml::submitButton(Yii::t('app', 'Save'));
 $this->endWidget();
 ?>
 </div><!-- form -->
+
+</td>
+    </tr>
+</table>

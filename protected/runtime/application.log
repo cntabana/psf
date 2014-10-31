@@ -4167,3 +4167,1070 @@ Stack trace:
 REQUEST_URI=/psf/index.php?r=user
 HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
 ---
+2014/10/31 00:50:42 [error] [php] Undefined offset: 3 (C:\xampp\htdocs\psf\protected\views\site\home.php:61)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\charisma\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\psf\protected\controllers\SiteController.php(97): SiteController->render()
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): SiteController->actionHome()
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\charisma\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=site/home
+in C:\xampp\htdocs\psf\protected\views\site\home.php (61)
+in C:\xampp\htdocs\psf\protected\controllers\SiteController.php (97)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 00:51:04 [error] [php] Undefined offset: 4 (C:\xampp\htdocs\psf\protected\views\site\home.php:83)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\charisma\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\psf\protected\controllers\SiteController.php(97): SiteController->render()
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): SiteController->actionHome()
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\charisma\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=site/home
+in C:\xampp\htdocs\psf\protected\views\site\home.php (83)
+in C:\xampp\htdocs\psf\protected\controllers\SiteController.php (97)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 00:51:57 [error] [php] Undefined offset: 3 (C:\xampp\htdocs\psf\protected\views\site\home.php:83)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\charisma\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\psf\protected\controllers\SiteController.php(97): SiteController->render()
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): SiteController->actionHome()
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\charisma\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=site/home
+in C:\xampp\htdocs\psf\protected\views\site\home.php (83)
+in C:\xampp\htdocs\psf\protected\controllers\SiteController.php (97)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 00:58:10 [error] [php] Undefined offset: 3 (C:\xampp\htdocs\psf\protected\views\site\home.php:83)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\charisma\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\psf\protected\controllers\SiteController.php(97): SiteController->render()
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): SiteController->actionHome()
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\charisma\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=site/home
+in C:\xampp\htdocs\psf\protected\views\site\home.php (83)
+in C:\xampp\htdocs\psf\protected\controllers\SiteController.php (97)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 01:02:48 [error] [php] Undefined variable: sql (C:\xampp\htdocs\psf\protected\controllers\SiteController.php:82)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\charisma\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=site/home
+in C:\xampp\htdocs\psf\protected\controllers\SiteController.php (82)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 01:12:17 [error] [php] Undefined variable: p (C:\xampp\htdocs\psf\protected\controllers\SiteController.php:88)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\charisma\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=site/home
+in C:\xampp\htdocs\psf\protected\controllers\SiteController.php (88)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 12:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('users')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/?r=users
+HTTP_REFERER=http://127.0.0.1/psf/?r=site/home
+---
+2014/10/31 12:25:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "backup?r=site/home".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('backup?r=site/h...')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=backup?r=site/home
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=site/login
+---
+2014/10/31 12:26:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logout".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('logout')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=logout
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=backup
+---
+2014/10/31 12:40:47 [error] [exception.CException] exception 'CException' with message 'Property "UserController.menu" is not defined.' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\views\user\admin.php(7): CComponent->__set('menu', Array)
+#1 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#5 C:\xampp\htdocs\psf\protected\controllers\UserController.php(193): CController->render('admin', Array)
+#6 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('admin')
+#16 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#17 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/psf/index.php?r=user/admin
+---
+2014/10/31 12:51:38 [error] [exception.CException] exception 'CException' with message 'Property "UserController.menu" is not defined.' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\views\user\admin.php(7): CComponent->__set('menu', Array)
+#1 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#5 C:\xampp\htdocs\psf\protected\controllers\UserController.php(193): CController->render('admin', Array)
+#6 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('admin')
+#16 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#17 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/psf/index.php?r=user/admin
+---
+2014/10/31 13:05:15 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing directory or file.' in C:\xampp\htdocs\charisma\framework\YiiBase.php:347
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\YiiBase.php(196): YiiBase::import('bootstrap.compo...', true)
+#1 C:\xampp\htdocs\charisma\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\charisma\framework\base\CModule.php(523): CModule->getComponent('bootstrap')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(163): CModule->preloadComponents()
+#4 C:\xampp\htdocs\charisma\framework\YiiBase.php(125): CApplication->__construct('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\charisma\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\psf\index.php(13): YiiBase::createWebApplication('C:\xampp\htdocs...')
+#7 {main}
+REQUEST_URI=/psf/index.php?r=request/newRequest
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=site/home
+---
+2014/10/31 13:06:02 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\charisma\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\YiiBase.php(196): YiiBase::import('bootstrap.compo...', true)
+#1 C:\xampp\htdocs\charisma\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\charisma\framework\base\CModule.php(523): CModule->getComponent('bootstrap')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(163): CModule->preloadComponents()
+#4 C:\xampp\htdocs\charisma\framework\YiiBase.php(125): CApplication->__construct('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\charisma\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\psf\index.php(13): YiiBase::createWebApplication('C:\xampp\htdocs...')
+#7 {main}
+REQUEST_URI=/psf/index.php?r=request/newRequest
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=site/home
+---
+2014/10/31 13:07:33 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\charisma\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\YiiBase.php(196): YiiBase::import('bootstrap.compo...', true)
+#1 C:\xampp\htdocs\charisma\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\charisma\framework\base\CModule.php(523): CModule->getComponent('bootstrap')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(163): CModule->preloadComponents()
+#4 C:\xampp\htdocs\charisma\framework\YiiBase.php(125): CApplication->__construct('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\charisma\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\psf\index.php(13): YiiBase::createWebApplication('C:\xampp\htdocs...')
+#7 {main}
+REQUEST_URI=/psf/index.php?r=request/newRequest
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=site/home
+---
+2014/10/31 13:14:36 [error] [exception.CException] exception 'CException' with message 'Property "UserController.menu" is not defined.' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\views\user\admin.php(8): CComponent->__set('menu', Array)
+#1 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#5 C:\xampp\htdocs\psf\protected\controllers\UserController.php(193): CController->render('admin', Array)
+#6 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('admin')
+#16 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#17 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/psf/index.php?r=user/admin
+---
+2014/10/31 13:15:27 [error] [exception.CException] exception 'CException' with message 'Property "UserController.menu" is not defined.' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\views\user\admin.php(7): CComponent->__set('menu', Array)
+#1 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#5 C:\xampp\htdocs\psf\protected\controllers\UserController.php(193): CController->render('admin', Array)
+#6 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('admin')
+#16 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#17 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/psf/index.php?r=user/admin
+---
+2014/10/31 13:16:51 [error] [exception.CException] exception 'CException' with message 'Property "UserController.menu" is not defined.' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\views\user\admin.php(8): CComponent->__set('menu', Array)
+#1 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#5 C:\xampp\htdocs\psf\protected\controllers\UserController.php(193): CController->render('admin', Array)
+#6 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('admin')
+#16 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#17 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/psf/index.php?r=user/admin
+---
+2014/10/31 13:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/changepassword".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('users/changepas...')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=users/changepassword&id=5
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/31 13:32:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "changepassword".' in C:\xampp\htdocs\charisma\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(270): CController->missingAction('changepassword')
+#1 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('changepassword')
+#2 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/changepass...')
+#3 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/psf/index.php?r=user/changepassword&id=5
+---
+2014/10/31 13:36:08 [error] [php] include(Users.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\charisma\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\controllers\UserController.php(322): spl_autoload_call()
+#1 unknown(0): UserController->actionChangepassword()
+#2 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=user/changepassword&id=5
+in C:\xampp\htdocs\psf\protected\controllers\UserController.php (322)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 13:37:07 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "changepassword".' in C:\xampp\htdocs\charisma\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('changepassword', Array, true)
+#1 C:\xampp\htdocs\psf\protected\controllers\UserController.php(345): CController->render('changepassword', Array)
+#2 [internal function]: UserController->actionChangepassword('5')
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#4 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('changepassword')
+#14 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/changepass...')
+#15 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/psf/index.php?r=user/changepassword&id=5
+---
+2014/10/31 13:39:26 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "changepassword".' in C:\xampp\htdocs\charisma\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('changepassword', Array, true)
+#1 C:\xampp\htdocs\psf\protected\controllers\UserController.php(345): CController->render('changepassword', Array)
+#2 [internal function]: UserController->actionChangepassword('5')
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#4 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('changepassword')
+#14 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/changepass...')
+#15 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/psf/index.php?r=user/changepassword&id=5
+---
+2014/10/31 13:39:30 [error] [php] include(findPasswords.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\charisma\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\validators\CValidator.php(186): import()
+#1 C:\xampp\htdocs\charisma\framework\base\CModel.php(287): createValidator()
+#2 C:\xampp\htdocs\charisma\framework\base\CModel.php(260): User->createValidators()
+#3 C:\xampp\htdocs\charisma\framework\base\CModel.php(304): User->getValidators()
+#4 C:\xampp\htdocs\charisma\framework\web\helpers\CHtml.php(1414): User->isAttributeRequired()
+#5 C:\xampp\htdocs\charisma\framework\web\widgets\CActiveForm.php(597): activeLabelEx()
+#6 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\input\TbInput.php(253): TbActiveForm->labelEx()
+#7 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\input\TbInputVertical.php(140): TbInputVertical->getLabel()
+#8 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\input\TbInput.php(230): TbInputVertical->textField()
+#9 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(173): TbInputVertical->run()
+#10 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): UserController->widget()
+#11 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\TbActiveForm.php(186): TbActiveForm->inputRow()
+#12 C:\xampp\htdocs\psf\protected\views\user\_search.php(8): TbActiveForm->textFieldRow()
+#13 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): UserController->renderInternal()
+#15 C:\xampp\htdocs\charisma\framework\web\CController.php(869): UserController->renderFile()
+#16 C:\xampp\htdocs\psf\protected\views\user\index.php(48): UserController->renderPartial()
+#17 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require()
+#18 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): UserController->renderInternal()
+#19 C:\xampp\htdocs\charisma\framework\web\CController.php(869): UserController->renderFile()
+#20 C:\xampp\htdocs\charisma\framework\web\CController.php(782): UserController->renderPartial()
+#21 C:\xampp\htdocs\psf\protected\controllers\UserController.php(177): UserController->render()
+#22 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#23 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#24 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#25 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#26 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#27 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#28 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#29 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#30 C:\xampp\htdocs\charisma\framework\web\CController.php(265): UserController->runActionWithFilters()
+#31 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): UserController->run()
+#32 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#33 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#34 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=user
+in C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\input\TbInput.php (253)
+in C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\input\TbInputVertical.php (140)
+in C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\input\TbInput.php (230)
+2014/10/31 13:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/changepassword".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('users/changepas...')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=users/changepassword&id=5
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/31 13:41:04 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "changepassword".' in C:\xampp\htdocs\charisma\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('changepassword', Array, true)
+#1 C:\xampp\htdocs\psf\protected\controllers\UserController.php(345): CController->render('changepassword', Array)
+#2 [internal function]: UserController->actionChangepassword('5')
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#4 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('changepassword')
+#14 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/changepass...')
+#15 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/psf/index.php?r=user/changepassword&id=5
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user
+---
+2014/10/31 13:41:58 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "user/changepassword".' in C:\xampp\htdocs\charisma\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('user/changepass...', Array, true)
+#1 C:\xampp\htdocs\psf\protected\controllers\UserController.php(345): CController->render('user/changepass...', Array)
+#2 [internal function]: UserController->actionChangepassword('5')
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#4 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('changepassword')
+#14 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/changepass...')
+#15 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/psf/index.php?r=user/changepassword&id=5
+---
+2014/10/31 13:51:05 [error] [exception.CException] exception 'CException' with message 'Property "TbDataColumn.source" is not defined.' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\YiiBase.php(220): CComponent->__set('source', Array)
+#1 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(TbGridView))
+#2 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\TbGridView.php(91): CGridView->initColumns()
+#3 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#4 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\TbGridView.php(49): CGridView->init()
+#5 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(147): TbGridView->init()
+#6 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#7 C:\xampp\htdocs\psf\protected\views\user\index.php(105): CBaseController->widget('bootstrap.widge...', Array)
+#8 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#9 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#12 C:\xampp\htdocs\psf\protected\controllers\UserController.php(177): CController->render('index', Array)
+#13 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('')
+#23 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#24 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/psf/index.php?r=user
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user/changePasswordUser&p=profile
+---
+2014/10/31 13:52:02 [error] [php] call_user_func_array() expects parameter 1 to be a valid callback, array must have exactly two members (C:\xampp\htdocs\charisma\framework\base\CComponent.php:617)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridColumn.php(151): TbDataColumn->renderDataCellContent()
+#1 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(616): TbDataColumn->renderDataCell()
+#2 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(572): TbGridView->renderTableRow()
+#3 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(482): TbGridView->renderTableBody()
+#4 C:\xampp\htdocs\charisma\framework\zii\widgets\CBaseListView.php(167): TbGridView->renderItems()
+#5 unknown(0): TbGridView->renderSection()
+#6 C:\xampp\htdocs\charisma\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 C:\xampp\htdocs\charisma\framework\zii\widgets\CBaseListView.php(135): TbGridView->renderContent()
+#8 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(173): TbGridView->run()
+#9 C:\xampp\htdocs\psf\protected\views\user\index.php(105): UserController->widget()
+#10 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): UserController->renderInternal()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(869): UserController->renderFile()
+#13 C:\xampp\htdocs\charisma\framework\web\CController.php(782): UserController->renderPartial()
+#14 C:\xampp\htdocs\psf\protected\controllers\UserController.php(177): UserController->render()
+#15 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#16 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#18 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#21 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\charisma\framework\web\CController.php(265): UserController->runActionWithFilters()
+#24 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): UserController->run()
+#25 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=user
+in C:\xampp\htdocs\psf\protected\views\user\index.php (105)
+in C:\xampp\htdocs\psf\protected\controllers\UserController.php (177)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 13:57:14 [error] [php] Non-static method BaseUser::getGroups() should not be called statically, assuming $this from incompatible context (C:\xampp\htdocs\psf\protected\views\user\index.php:97)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\xampp\htdocs\charisma\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\xampp\htdocs\psf\protected\controllers\UserController.php(177): UserController->render()
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=user
+in C:\xampp\htdocs\psf\protected\views\user\index.php (97)
+in C:\xampp\htdocs\psf\protected\controllers\UserController.php (177)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 14:00:19 [error] [php] Use of undefined constant Administrative - assumed 'Administrative' (C:\xampp\htdocs\charisma\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridColumn.php(151): TbDataColumn->renderDataCellContent()
+#1 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(616): TbDataColumn->renderDataCell()
+#2 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(572): TbGridView->renderTableRow()
+#3 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(482): TbGridView->renderTableBody()
+#4 C:\xampp\htdocs\charisma\framework\zii\widgets\CBaseListView.php(167): TbGridView->renderItems()
+#5 unknown(0): TbGridView->renderSection()
+#6 C:\xampp\htdocs\charisma\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 C:\xampp\htdocs\charisma\framework\zii\widgets\CBaseListView.php(135): TbGridView->renderContent()
+#8 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(173): TbGridView->run()
+#9 C:\xampp\htdocs\psf\protected\views\user\index.php(105): UserController->widget()
+#10 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): UserController->renderInternal()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(869): UserController->renderFile()
+#13 C:\xampp\htdocs\charisma\framework\web\CController.php(782): UserController->renderPartial()
+#14 C:\xampp\htdocs\psf\protected\controllers\UserController.php(177): UserController->render()
+#15 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#16 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#18 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#21 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\charisma\framework\web\CController.php(265): UserController->runActionWithFilters()
+#24 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): UserController->run()
+#25 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=user
+in C:\xampp\htdocs\psf\protected\views\user\index.php (105)
+in C:\xampp\htdocs\psf\protected\controllers\UserController.php (177)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 14:01:18 [error] [php] Use of undefined constant VGVG - assumed 'VGVG' (C:\xampp\htdocs\charisma\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridColumn.php(151): TbDataColumn->renderDataCellContent()
+#1 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(616): TbDataColumn->renderDataCell()
+#2 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(572): TbGridView->renderTableRow()
+#3 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(482): TbGridView->renderTableBody()
+#4 C:\xampp\htdocs\charisma\framework\zii\widgets\CBaseListView.php(167): TbGridView->renderItems()
+#5 unknown(0): TbGridView->renderSection()
+#6 C:\xampp\htdocs\charisma\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 C:\xampp\htdocs\charisma\framework\zii\widgets\CBaseListView.php(135): TbGridView->renderContent()
+#8 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(173): TbGridView->run()
+#9 C:\xampp\htdocs\psf\protected\views\user\index.php(105): UserController->widget()
+#10 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): UserController->renderInternal()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(869): UserController->renderFile()
+#13 C:\xampp\htdocs\charisma\framework\web\CController.php(782): UserController->renderPartial()
+#14 C:\xampp\htdocs\psf\protected\controllers\UserController.php(177): UserController->render()
+#15 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#16 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#18 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#21 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\charisma\framework\web\CController.php(265): UserController->runActionWithFilters()
+#24 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): UserController->run()
+#25 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=user
+in C:\xampp\htdocs\psf\protected\views\user\index.php (105)
+in C:\xampp\htdocs\psf\protected\controllers\UserController.php (177)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 14:04:33 [error] [php] Use of undefined constant Administrative - assumed 'Administrative' (C:\xampp\htdocs\charisma\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridColumn.php(151): TbDataColumn->renderDataCellContent()
+#1 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(616): TbDataColumn->renderDataCell()
+#2 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(572): TbGridView->renderTableRow()
+#3 C:\xampp\htdocs\charisma\framework\zii\widgets\grid\CGridView.php(482): TbGridView->renderTableBody()
+#4 C:\xampp\htdocs\charisma\framework\zii\widgets\CBaseListView.php(167): TbGridView->renderItems()
+#5 unknown(0): TbGridView->renderSection()
+#6 C:\xampp\htdocs\charisma\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 C:\xampp\htdocs\charisma\framework\zii\widgets\CBaseListView.php(135): TbGridView->renderContent()
+#8 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(173): TbGridView->run()
+#9 C:\xampp\htdocs\psf\protected\views\user\index.php(100): UserController->widget()
+#10 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): UserController->renderInternal()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(869): UserController->renderFile()
+#13 C:\xampp\htdocs\charisma\framework\web\CController.php(782): UserController->renderPartial()
+#14 C:\xampp\htdocs\psf\protected\controllers\UserController.php(177): UserController->render()
+#15 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#16 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#18 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#21 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\charisma\framework\web\CController.php(265): UserController->runActionWithFilters()
+#24 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): UserController->run()
+#25 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=user
+in C:\xampp\htdocs\psf\protected\views\user\index.php (100)
+in C:\xampp\htdocs\psf\protected\controllers\UserController.php (177)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 14:07:29 [error] [php] Undefined variable: data (C:\xampp\htdocs\psf\protected\views\user\index.php:93)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\xampp\htdocs\charisma\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\xampp\htdocs\psf\protected\controllers\UserController.php(177): UserController->render()
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=user
+in C:\xampp\htdocs\psf\protected\views\user\index.php (93)
+in C:\xampp\htdocs\psf\protected\controllers\UserController.php (177)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 14:08:36 [error] [php] Undefined variable: data (C:\xampp\htdocs\psf\protected\views\user\index.php:93)
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\xampp\htdocs\charisma\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\xampp\htdocs\psf\protected\controllers\UserController.php(177): UserController->render()
+#3 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\psf\index.php(13): CWebApplication->run()
+REQUEST_URI=/psf/index.php?r=user
+in C:\xampp\htdocs\psf\protected\views\user\index.php (93)
+in C:\xampp\htdocs\psf\protected\controllers\UserController.php (177)
+in C:\xampp\htdocs\psf\index.php (13)
+2014/10/31 14:21:05 [error] [exception.CException] exception 'CException' with message 'Property "UserController.menu" is not defined.' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\views\user\create.php(8): CComponent->__set('menu', Array)
+#1 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#5 C:\xampp\htdocs\psf\protected\controllers\UserController.php(79): CController->render('create', Array)
+#6 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#7 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#16 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#17 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/psf/index.php?r=user/create
+---
+2014/10/31 14:34:15 [error] [exception.CException] exception 'CException' with message 'Alias "booster.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file.' in C:\xampp\htdocs\charisma\framework\YiiBase.php:347
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(189): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\psf\protected\views\user\_form.php(8): CBaseController->beginWidget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\psf\protected\views\user\create.php(28): CController->renderPartial('_form', Array)
+#8 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#9 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 C:\xampp\htdocs\psf\protected\controllers\UserController.php(79): CController->render('create', Array)
+#13 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#23 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#24 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/psf/index.php?r=user/create
+---
+2014/10/31 14:35:47 [error] [exception.CException] exception 'CException' with message 'Alias "booster.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file.' in C:\xampp\htdocs\charisma\framework\YiiBase.php:347
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(189): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\psf\protected\views\user\_form.php(8): CBaseController->beginWidget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\psf\protected\views\user\create.php(28): CController->renderPartial('_form', Array)
+#8 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#9 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 C:\xampp\htdocs\psf\protected\controllers\UserController.php(79): CController->render('create', Array)
+#13 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#23 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#24 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/psf/index.php?r=user/create
+---
+2014/10/31 14:36:17 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "textFieldGroup".' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\views\user\_form.php(10): CComponent->__call('textFieldGroup', Array)
+#1 C:\xampp\htdocs\psf\protected\views\user\_form.php(10): TbActiveForm->textFieldGroup(Object(User), 'textField')
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\psf\protected\views\user\create.php(28): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\psf\protected\controllers\UserController.php(79): CController->render('create', Array)
+#11 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#21 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#22 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/psf/index.php?r=user/create
+---
+2014/10/31 14:36:43 [error] [exception.CException] exception 'CException' with message 'Property "User.textField" is not defined.' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\db\ar\CActiveRecord.php(145): CComponent->__get('textField')
+#1 C:\xampp\htdocs\charisma\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('textField')
+#2 C:\xampp\htdocs\charisma\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(User), 'textField')
+#3 C:\xampp\htdocs\charisma\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(User), 'textField', Array)
+#4 C:\xampp\htdocs\charisma\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(User), 'textField', Array)
+#5 C:\xampp\htdocs\psf\protected\views\user\_form.php(10): CActiveForm->textField(Object(User), 'textField')
+#6 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\psf\protected\views\user\create.php(28): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\psf\protected\controllers\UserController.php(79): CController->render('create', Array)
+#15 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#16 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#26 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/psf/index.php?r=user/create
+---
+2014/10/31 14:38:02 [error] [exception.CException] exception 'CException' with message 'Property "User.textField" is not defined.' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\db\ar\CActiveRecord.php(145): CComponent->__get('textField')
+#1 C:\xampp\htdocs\charisma\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('textField')
+#2 C:\xampp\htdocs\charisma\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(User), 'textField')
+#3 C:\xampp\htdocs\charisma\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(User), 'textField', Array)
+#4 C:\xampp\htdocs\charisma\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(User), 'textField', Array)
+#5 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\input\TbInputVertical.php(142): CActiveForm->textField(Object(User), 'textField', Array)
+#6 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\input\TbInput.php(230): TbInputVertical->textField()
+#7 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(173): TbInput->run()
+#8 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): CBaseController->widget('bootstrap.widge...', Array)
+#9 C:\xampp\htdocs\psf\protected\extensions\bootstrap\widgets\TbActiveForm.php(186): TbActiveForm->inputRow('text', Object(User), 'textField', NULL, Array)
+#10 C:\xampp\htdocs\psf\protected\views\user\_form.php(10): TbActiveForm->textFieldRow(Object(User), 'textField')
+#11 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\psf\protected\views\user\create.php(28): CController->renderPartial('_form', Array)
+#15 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#16 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#17 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#18 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#19 C:\xampp\htdocs\psf\protected\controllers\UserController.php(79): CController->render('create', Array)
+#20 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#21 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#28 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#30 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#31 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#32 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/psf/index.php?r=user/create
+---
+2014/10/31 14:38:43 [error] [exception.CException] exception 'CException' with message 'Alias "booster.widgets.TbButton" is invalid. Make sure it points to an existing directory or file.' in C:\xampp\htdocs\charisma\framework\YiiBase.php:347
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\psf\protected\views\user\_form.php(16): CBaseController->widget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\psf\protected\views\user\create.php(28): CController->renderPartial('_form', Array)
+#8 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#9 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 C:\xampp\htdocs\psf\protected\controllers\UserController.php(79): CController->render('create', Array)
+#13 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#23 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#24 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/psf/index.php?r=user/create
+---
+2014/10/31 14:38:58 [error] [exception.CException] exception 'CException' with message 'Property "TbActiveForm.buttonType" is not defined.' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWidgetFactory.php(161): CComponent->__set('buttonType', 'submit')
+#1 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\psf\protected\views\user\_form.php(16): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\psf\protected\views\user\create.php(28): CController->renderPartial('_form', Array)
+#8 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#9 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 C:\xampp\htdocs\psf\protected\controllers\UserController.php(79): CController->render('create', Array)
+#13 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#14 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#23 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#24 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/psf/index.php?r=user/create
+---
+2014/10/31 14:57:59 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "hiddenFieldRow".' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\views\user\_form.php(33): CComponent->__call('hiddenFieldRow', Array)
+#1 C:\xampp\htdocs\psf\protected\views\user\_form.php(33): TbActiveForm->hiddenFieldRow(Object(User), 'lastname', Array)
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\psf\protected\views\user\create.php(28): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\psf\protected\controllers\UserController.php(79): CController->render('create', Array)
+#11 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#21 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#22 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/psf/index.php?r=user/create
+---
+2014/10/31 14:59:26 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "hidenField".' in C:\xampp\htdocs\charisma\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\psf\protected\views\user\_form.php(43): CComponent->__call('hidenField', Array)
+#1 C:\xampp\htdocs\psf\protected\views\user\_form.php(43): TbActiveForm->hidenField(Object(User), 'status', Array)
+#2 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\psf\protected\views\user\create.php(28): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\charisma\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\charisma\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\charisma\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\psf\protected\controllers\UserController.php(79): CController->render('create', Array)
+#11 C:\xampp\htdocs\charisma\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#12 C:\xampp\htdocs\charisma\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\charisma\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\charisma\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\charisma\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\charisma\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\charisma\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\charisma\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(282): CController->run('create')
+#21 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#22 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/psf/index.php?r=user/create
+---
+2014/10/31 15:30:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/changePasswordUser".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('users/changePas...')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=users/changePasswordUser&p=profile
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=userRequests
+---
+2014/10/31 15:30:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/changePasswordUser".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('users/changePas...')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=users/changePasswordUser&p=profile
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=users/changePasswordUser&p=profile
+---
+2014/10/31 15:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/changePasswordUser".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('users/changePas...')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=users/changePasswordUser&p=profile
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=users/changePasswordUser&p=profile
+---
+2014/10/31 15:33:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/changePasswordUser".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('users/changePas...')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=users/changePasswordUser&p=profile
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=userRequests
+---
+2014/10/31 15:34:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/changePasswordUser".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('users/changePas...')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=users/changePasswordUser&p=profile
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=users/changePasswordUser&p=profile
+---
+2014/10/31 15:36:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/changepassword".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('users/changepas...')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=users/changepassword&id=7
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=user/changePasswordUser&p=profile
+---
+2014/10/31 15:36:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/changepassword".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('users/changepas...')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=users/changepassword&id=7
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=users/changepassword&id=7
+---
+2014/10/31 15:36:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/changepassword".' in C:\xampp\htdocs\charisma\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\charisma\framework\web\CWebApplication.php(141): CWebApplication->runController('users/changepas...')
+#1 C:\xampp\htdocs\charisma\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\psf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/psf/index.php?r=users/changepassword&id=7
+HTTP_REFERER=http://127.0.0.1/psf/index.php?r=users/changepassword&id=7
+---

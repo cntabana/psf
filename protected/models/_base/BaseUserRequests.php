@@ -29,7 +29,7 @@ abstract class BaseUserRequests extends GxActiveRecord {
 	}
 
 	public static function label($n = 1) {
-		return Yii::t('app', 'UserRequests|UserRequests', $n);
+		return Yii::t('app', 'User Requests|User Requests', $n);
 	}
 
 	public static function representingColumn() {

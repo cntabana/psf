@@ -6,7 +6,7 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h3>Create User</h3>
+<h1>Create User</h1>
 <hr/>
 <?php 
 $this->beginWidget('zii.widgets.CPortlet', array(
@@ -24,6 +24,5 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 ));
 $this->endWidget();
 ?>
-<div style='margin-left:150px'>
+
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
-</div>

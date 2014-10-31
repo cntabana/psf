@@ -75,6 +75,22 @@ class SiteController extends Controller
 
 public function actionHome()
 	    {
+        $sql1 = 'select count(*) from   request  where status = 1';
+        $sql2 = 'select count(*) from   request  where status = 2';
+        $sql3 = 'select count(*) from   request  where status = 3';
+        $sql4 = 'select count(*) from   request  where status = 4';
+		$o = Yii::app()->db->createCommand($sql1)->queryScalar(); 
+		$p = Yii::app()->db->createCommand($sql2)->queryScalar(); 
+		$u = Yii::app()->db->createCommand($sql3)->queryScalar(); 
+		$c = Yii::app()->db->createCommand($sql4)->queryScalar();         
+	    
+        
+        $this->render('home', array('p'=>$c, 'o'=>$o, 'u'=>$p, 'c'=>$u));    
+
+	} 
+
+	public function actionChart()
+	    {
         $sql = 'select case 
             		when status = 0 then "Pending"
 					when status = 1 then "Open"
@@ -131,7 +147,8 @@ public function actionHome()
 	public function actionLogout()
 	{
 		Yii::app()->user->logout();
-		$this->redirect(Yii::app()->homeUrl);
+		//$this->redirect(Yii::app()->homeUrl);
+		$this->redirect(Yii::app()->user->returnUrl.'?r=site/login');
 	}
 
 	public function actionCitydata()

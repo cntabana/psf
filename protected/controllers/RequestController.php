@@ -50,7 +50,7 @@ class RequestController extends CController
 	{
 		$date = date('Y-m-d');
 		$sql = "update request set status = 1 ,responsedate ='".$date."' where id = ".$id;
-        echo $sql;
+        //echo $sql;
         Yii::app()->db->createCommand($sql)->query();
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),

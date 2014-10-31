@@ -1,19 +1,47 @@
-<?php
-/* @var $this SiteController */
-/* @var $model LoginForm */
-/* @var $form CActiveForm  */
+<!DOCTYPE>
+<html >
+<head>
 
-$this->pageTitle=Yii::app()->name . ' - Login';
-$this->breadcrumbs=array(
-	'Login',
-);
-?>
 
-<h1>Login</h1>
+	<!-- General meta information -->
+	<title>Login Psf</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="robots" content="index, follow" />
+	<meta charset="utf-8" />
+	<!-- // General meta information -->
+	
+	
+	<!-- Load Javascript -->
+	<script type="text/javascript" src="./login/js/jquery.js"></script>
+	<script type="text/javascript" src="./login/js/jquery.query-2.1.7.js"></script>
+	<script type="text/javascript" src="./login/js/rainbows.js"></script>
+	<!-- // Load Javascipt -->
 
-<p>Please fill out the following form with your login credentials:</p>
+	<!-- Load stylesheets -->
+	<link type="text/css" rel="stylesheet" href="./login/css/style.css" media="screen" />
+	<!-- // Load stylesheets -->
+	
+<script>
 
-<div class="form">
+
+	$(document).ready(function(){
+ 
+	$("#submit1").hover(
+	function() {
+	$(this).animate({"opacity": "0"}, "slow");
+	},
+	function() {
+	$(this).animate({"opacity": "1"}, "slow");
+	});
+ 	});
+
+
+</script>
+	
+</head>
+<body>
+
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,
@@ -22,32 +50,65 @@ $this->breadcrumbs=array(
 	),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<div id="wrapper">
+		<div id="wrappertop"></div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
-		<?php echo $form->error($model,'username'); ?>
+		<div id="wrappermiddle">
+
+			<h2>Login</h2>
+
+			<div id="username_input">
+
+				<div id="username_inputleft"></div>
+
+				<div id="username_inputmiddle">
+			
+					
+					<?php echo $form->textField($model,'username',array('id'=>'url','placeholder'=>'Enter Username')); ?>
+					<?php echo $form->error($model,'username'); ?>
+					<img id="url_user" src="./login/images/mailicon.png" alt="">
+				
+				</div>
+
+				<div id="username_inputright"></div>
+
+			</div>
+
+			<div id="password_input">
+
+				<div id="password_inputleft"></div>
+
+				<div id="password_inputmiddle">
+				
+					
+					<?php echo $form->passwordField($model,'password',array('id'=>'url','placeholder'=>'Enter Password')); ?>
+					<?php echo $form->error($model,'password'); ?>
+					<img id="url_password" src="./login/images/passicon.png" alt="">
+				
+				</div>
+
+				<div id="password_inputright"></div>
+
+			</div>
+
+			<div id="submit">
+				<form>
+				<input type="image" src="./login/images/submit_hover.png" id="submit1" value="Sign In">
+				<input type="image" src="./login/images/submit.png" id="submit2" value="Sign In">
+				</form>
+			</div>
+
+
+			
+
+			
+		</div>
+
+		<div id="wrapperbottom"></div>
+		
+		
 	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password'); ?>
-		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>
-	</div>
-
-	<div class="row rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
-		<?php echo $form->label($model,'rememberMe'); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Login'); ?>
-	</div>
-
 <?php $this->endWidget(); ?>
-</div><!-- form -->
+
+</body>
+</html>
