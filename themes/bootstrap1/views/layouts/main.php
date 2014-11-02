@@ -11,6 +11,24 @@ ini_set('display_errors', 1);
 	<meta name="language" content="en" />
 
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/styles.css" />
+   <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.min.css" rel="stylesheet"> 
+ 
+ <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/styles.css" />
+
+    <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/pagination.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/sb-admin-2.css" rel="stylesheet">
+
+    
+    <!-- Custom Fonts -->
+    <link href="<?php echo Yii::app()->theme->baseUrl; ?>/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
