@@ -96,7 +96,7 @@
                 </div>
             </div>
             <!-- /.row -->
-            <div class="row">
+        <!--    <div class="row">
                 <div class="col-lg-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -122,30 +122,23 @@
                             </div>
                         </div>
                         <!-- /.panel-heading -->
-                        <div class="panel-body">
+                       <!-- <div class="panel-body">
                             <div id="morris-area-chart">
-                            <?php 
-                                 $this->widget('application.extensions.EFlot.EFlotGraphWidget', 
-                                array(
-                                  
-                                )
-                                
-                            );
-                            ?>
+                            
                             </div>
                         </div>
                         <!-- /.panel-body -->
-                    </div>
+                <!--    </div>
                  
                 </div>
                 <!-- /.col-lg-8 -->
-                <div class="col-lg-4">
+               <!-- <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-bell fa-fw"></i> Notifications Panel
                         </div>
                         <!-- /.panel-heading -->
-                        <div class="panel-body">
+                     <!--   <div class="panel-body">
 
                             <div class="list-group">
                                 <a href="#" class="list-group-item">
@@ -195,8 +188,9 @@
                                 </a>
                             </div>
                             <!-- /.list-group -->
-                            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                          <!--  <a href="#" class="btn btn-default btn-block">View All Alerts</a>
                         </div>
+                    -->
                         <!-- /.panel-body -->
                     </div>
             
@@ -205,9 +199,9 @@
                 <!-- /.col-lg-4 -->
             </div>
 
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/plugins/morris/raphael.min.js"></script>
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/plugins/morris/morris.min.js"></script>
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/plugins/morris/morris-data.js"></script>
+    <!--<script src="<?php //echo Yii::app()->theme->baseUrl; ?>/js/plugins/morris/raphael.min.js"></script>
+    <script src="<?php //echo Yii::app()->theme->baseUrl; ?>/js/plugins/morris/morris.min.js"></script>
+    <script src="<?php //echo Yii::app()->theme->baseUrl; ?>/js/plugins/morris/morris-data.js"></script>
 
 
-
+-->
