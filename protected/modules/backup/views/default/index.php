@@ -3,7 +3,7 @@ $this->breadcrumbs=array(
 	'Manage'=>array('index'),
 );?>
 <h1> Manage database backup files</h1><br><br>
-<div>&nbsp;&nbsp;&nbsp;
+<div style='background-color:#00ACEE'>&nbsp;&nbsp;&nbsp;
 <a href='?r=backup/default/index'>List Backup Files</a>&nbsp;&nbsp;&nbsp;
 <a href='?r=backup/default/create'>Create Backup File</a>&nbsp;&nbsp;&nbsp;
 <a href='?r=backup/default/upload'>Upload Backup File</a>&nbsp;&nbsp;&nbsp;

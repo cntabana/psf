@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +14,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.min.css" rel="stylesheet"> 
+ 
  <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/styles.css" />
 
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/pagination.css" rel="stylesheet">
@@ -36,10 +38,21 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<style>
+a {
+    color: white;    
+}
 
+a:hover {
+    color: white;
+}
+h1,h3{
+    color:#027f3d;
+}
+</style>
 </head>
 
-<body>
+<body >
 
     <div id="wrapper">
 
@@ -52,7 +65,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Private Sector Federation</a>
+                <a class="navbar-brand" href="index.html" style='color:#fff'>Private Sector Federation</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -160,9 +173,9 @@
             </ul>
             <!-- /.navbar-top-links -->
 
-            <div class="navbar-default sidebar" role="navigation">
+            <div class="navbar-default sidebar" role="navigation" >
                 <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
+                    <ul class="nav" id="side-menu" >
                         <li class="sidebar-search">
                             <div class="input-group custom-search-form">
                                 <input type="text" class="form-control" placeholder="Search...">
@@ -179,7 +192,7 @@
                 if(yii::app()->user->group == 0){
                 ?>
                         <li>
-                            <a class="active" href="?r=site/home"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a class="active" href="?r=site/home" ><i class="fa fa-dashboard fa-fw"></i> <span style="color:#000">Dashboard</span></a>
                         </li>
                         <li>
                             <a href=""><i class="fa fa-bar-chart-o fa-fw"></i> Requests<span class="fa arrow"></span></a>
@@ -204,7 +217,7 @@
                        else if(yii::app()->user->group == 1 ){
                         ?>
                         <li>
-                            <a href=""><i class="fa fa-wrench fa-fw"></i> Responses<span class="fa arrow"></span></a>
+                            <a href="" ><i class="fa fa-wrench fa-fw" ></i> Responses<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="?r=userRequests">User Requests</a>
@@ -223,7 +236,7 @@
                    else if(yii::app()->user->group == 2 ){
                    ?>
                    <li>
-                            <a class="active" href="?r=site/home"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a class="active" href="?r=site/home"><i class="fa fa-dashboard fa-fw"></i> <span style="color:#000">Dashboard</span></a>
                         </li>
                         <li>
                             <a href=""><i class="fa fa-bar-chart-o fa-fw"></i> Requests<span class="fa arrow"></span></a>
@@ -264,6 +277,12 @@
                                 <li>
                                     <a href="?r=user">User Management</a>
                                 </li>
+                                <li>
+                                    <a href="?r=departments">Departments</a>
+                                </li>
+                                <li>
+                                    <a href="?r=position">Positions</a>
+                                </li>
                                  <li>
                                     <a href="?r=backup">Backup</a>
                                 </li>
@@ -288,7 +307,7 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <div id="page-wrapper">
+        <div id="page-wrapper" >
             
              <?php if(isset($this->breadcrumbs)):?>
                 <?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
@@ -296,7 +315,7 @@
                 )); ?><!-- breadcrumbs -->
             <?php endif?>
            
-            <?php echo $content; ?>
+           <?php echo $content; ?>
 
         </div>
         <!-- /#page-wrapper -->

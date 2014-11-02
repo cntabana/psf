@@ -5,8 +5,15 @@
 	'id' => 'position-form',
 	'enableAjaxValidation' => false,
 ));
-?>
 
+?>
+<style>
+.row{
+
+	width:30%;
+
+}
+</style>
 	<p class="note">
 		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
 	</p>
@@ -24,9 +31,7 @@
 		<?php echo $form->error($model,'jobTitle'); ?>
 		</div><!-- row -->
 
-		<label><?php echo GxHtml::encode($model->getRelationLabel('users')); ?></label>
-		<?php echo $form->checkBoxList($model, 'users', GxHtml::encodeEx(GxHtml::listDataEx(User::model()->findAllAttributes(null, true)), false, true)); ?>
-
+		
 <?php
 echo GxHtml::submitButton(Yii::t('app', 'Save'));
 $this->endWidget();

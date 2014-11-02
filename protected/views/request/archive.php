@@ -30,11 +30,11 @@ $this->beginWidget('zii.widgets.CPortlet', array(
 $this->widget('bootstrap.widgets.TbMenu', array(
 	'type'=>'pills',
 	'items'=>array(
-		array('label'=>'Create', 'icon'=>'icon-plus', 'url'=>Yii::app()->controller->createUrl('create'), 'linkOptions'=>array()),
+		array('label'=>'Create', 'icon'=>'icon-plus', 'url'=>Yii::app()->controller->createUrl('create'), 'linkOptions'=>array('style'=>'color:black')),
         array('label'=>'List', 'icon'=>'icon-th-list', 'url'=>Yii::app()->controller->createUrl('index'),'active'=>true, 'linkOptions'=>array()),
-		array('label'=>'Search', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button')),
-		array('label'=>'Export to PDF', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
-		array('label'=>'Export to Excel', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
+		array('label'=>'Search', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button','style'=>'color:black')),
+		array('label'=>'Export to PDF', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions'=>array('target'=>'_blank','style'=>'color:black'), 'visible'=>true),
+		array('label'=>'Export to Excel', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions'=>array('target'=>'_blank','style'=>'color:black'), 'visible'=>true),
 	),
 ));
 $this->endWidget();
@@ -51,7 +51,7 @@ $this->endWidget();
 
 <?php
 //echo 'CHtml::link("Redirect",Yii::app()->createUrl("userRequests/create", array("idrequest"=>$model->status)))';
-$link = 'CHtml::link("Redirect",Yii::app()->createUrl("userRequests/create", array("idrequest"=>$data["id"])))';
+$link = 'CHtml::link("<span style=color:blue>Redirect</span>",Yii::app()->createUrl("userRequests/create", array("idrequest"=>$data["id"])))';
  $this->widget('bootstrap.widgets.TbGridView',array(
 	'id'=>'request-grid',
 	'dataProvider'=>$model->searchArchive(),
@@ -64,8 +64,7 @@ $link = 'CHtml::link("Redirect",Yii::app()->createUrl("userRequests/create", arr
                 'name'=>'request',
                    'header'=>'Request',
                    'type'=>'raw',
-                  // 'value'=>'$data->nameofmd',
-				   'value'=>'CHtml::link($data["request"],Yii::app()->createUrl("request/view", array("id"=>$data["id"])))',
+                   'value'=>'CHtml::link("<span style=color:blue>$data[request]<span>",Yii::app()->createUrl("request/view", array("id"=>$data["id"])))',
                    //'htmlOptions'=>array('width'=>'40'),
                   
            ),

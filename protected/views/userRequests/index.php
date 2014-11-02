@@ -31,10 +31,10 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 	'type'=>'pills',
 	'items'=>array(
 		//array('label'=>'Create', 'icon'=>'icon-plus', 'url'=>Yii::app()->controller->createUrl('create'), 'linkOptions'=>array()),
-        array('label'=>'List', 'icon'=>'icon-th-list', 'url'=>Yii::app()->controller->createUrl('index'),'active'=>true, 'linkOptions'=>array()),
-		array('label'=>'Search', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button')),
-		array('label'=>'Export to PDF', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
-		array('label'=>'Export to Excel', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
+        array('label'=>'List', 'icon'=>'icon-th-list', 'url'=>Yii::app()->controller->createUrl('index'),'active'=>true, 'linkOptions'=>array('style'=>'color:black')),
+		array('label'=>'Search', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button','style'=>'color:black')),
+		array('label'=>'Export to PDF', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions'=>array('target'=>'_blank','style'=>'color:black'), 'visible'=>true),
+		array('label'=>'Export to Excel', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions'=>array('target'=>'_blank','style'=>'color:black'), 'visible'=>true),
 	),
 ));
 $this->endWidget();
@@ -67,7 +67,7 @@ $this->endWidget();
                    'header'=>'Request',
                    'type'=>'raw',
                   // 'value'=>'$data->nameofmd',
-				   'value'=>'CHtml::link("View Request",Yii::app()->createUrl("userRequests/view", array("id"=>$data["id"])))',
+				   'value'=>'CHtml::link("<span style=color:blue>View Request</span>",Yii::app()->createUrl("userRequests/view", array("id"=>$data["id"])))',
                    //'htmlOptions'=>array('width'=>'40'),
                   
            ),
@@ -75,25 +75,20 @@ $this->endWidget();
                 
                    'header'=>'Reponse',
                    'type'=>'raw',
-                   'value'=>'CHtml::link("Response",Yii::app()->createUrl("response/create", array("idrequest"=>$data["idrequest"])))',
+                   'value'=>'CHtml::link("<span style=color:blue>Response</span>",Yii::app()->createUrl("response/create", array("idrequest"=>$data["idrequest"])))',
                    //'htmlOptions'=>array('width'=>'40'),
                   
            ),
 	
-       array(
-            'class'=>'bootstrap.widgets.TbButtonColumn',
-			'template' => '{update}',
-			'buttons' => array(
-			      'update' => array(
-					'label'=> 'Redirect',
-					'options'=>array(
-						'class'=>'btn btn-small update1'
-					)
-				),
-				
-			),
-            'htmlOptions'=>array('style'=>'width: 100px'),
-           )
+           array(
+                
+                   'header'=>'Riderect',
+                   'type'=>'raw',
+                   'value'=>'CHtml::link("<span style=color:blue>Riderect</span>",Yii::app()->createUrl("userRequests/update", array("id"=>$data->id)))',
+                   //'htmlOptions'=>array('width'=>'40'),
+                  
+           ),
+
 	),
 )); ?>
 

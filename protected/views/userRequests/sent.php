@@ -32,9 +32,9 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 	'items'=>array(
 		//array('label'=>'Create', 'icon'=>'icon-plus', 'url'=>Yii::app()->controller->createUrl('create'), 'linkOptions'=>array()),
         array('label'=>'List', 'icon'=>'icon-th-list', 'url'=>Yii::app()->controller->createUrl('index'),'active'=>true, 'linkOptions'=>array()),
-		array('label'=>'Search', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button')),
-		array('label'=>'Export to PDF', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
-		array('label'=>'Export to Excel', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
+		array('label'=>'Search', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button','style'=>'color:black')),
+		array('label'=>'Export to PDF', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions'=>array('target'=>'_blank','style'=>'color:black'), 'visible'=>true),
+		array('label'=>'Export to Excel', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions'=>array('target'=>'_blank','style'=>'color:black'), 'visible'=>true),
 	),
 ));
 $this->endWidget();
@@ -67,7 +67,7 @@ $this->endWidget();
                    'header'=>'Request',
                    'type'=>'raw',
                   // 'value'=>'$data->nameofmd',
-				   'value'=>'CHtml::link("View Request",Yii::app()->createUrl("userRequests/view", array("id"=>$data["id"])))',
+				   'value'=>'CHtml::link("<span style=color:blue>View Request</span>",Yii::app()->createUrl("userRequests/view", array("id"=>$data["id"])))',
                    //'htmlOptions'=>array('width'=>'40'),
                   
            ),

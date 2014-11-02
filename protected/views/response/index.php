@@ -18,9 +18,9 @@ $('.search-form form').submit(function(){
 
 ?>
 
-<h1>Responses</h1>
+<h1 style = 'color:#027f3d'>Responses</h1>
 <hr />
-
+<span style='backgroundcolor:blue'>
 <?php 
 $this->beginWidget('zii.widgets.CPortlet', array(
 	'htmlOptions'=>array(
@@ -29,18 +29,19 @@ $this->beginWidget('zii.widgets.CPortlet', array(
 ));
 $this->widget('bootstrap.widgets.TbMenu', array(
 	'type'=>'pills',
+
 	'items'=>array(
 		//array('label'=>'Create', 'icon'=>'icon-plus', 'url'=>Yii::app()->controller->createUrl('create'), 'linkOptions'=>array()),
         array('label'=>'List', 'icon'=>'icon-th-list', 'url'=>Yii::app()->controller->createUrl('index'),'active'=>true, 'linkOptions'=>array()),
-		array('label'=>'Search', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button')),
-		array('label'=>'Export to PDF', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
-		array('label'=>'Export to Excel', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
+		array('label'=>'Search', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button','style'=>'color:black')),
+		array('label'=>'Export to PDF', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions'=>array('target'=>'_blank','style'=>'color:black'), 'visible'=>true),
+		array('label'=>'Export to Excel', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions'=>array('target'=>'_blank','style'=>'color:black'), 'visible'=>true),
 	),
 ));
 $this->endWidget();
 ?>
 
-
+</span>
 
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
@@ -54,30 +55,22 @@ $this->endWidget();
 	'dataProvider'=>$model->search(),
         'type'=>'striped bordered condensed',
         'template'=>'{summary}{pager}{items}{pager}',
+        'filter'=>$model,
 	'columns'=>array(
 		//'idrequest',
-		strip_tags('response'),
+		//strip_tags('<a href="">response</a>'),
 		//'response_date',
-       array(
-            'class'=>'bootstrap.widgets.TbButtonColumn',
-			'template' => '{view}  {delete}',
-			'buttons' => array(
-			      'view' => array(
-					'label'=> 'View',
-					'options'=>array(
-						'class'=>'btn btn-small view'
-					)
-				),	
-                
-				'delete' => array(
-					'label'=> 'Delete',
-					'options'=>array(
-						'class'=>'btn btn-small delete'
-					)
-				)
-			),
-            'htmlOptions'=>array('style'=>'width: 80px'),
-           )
+         array(
+                'name'=>'response',
+                   'header'=>'Response',
+                   'type'=>'raw',
+                  // 'value'=>'$data->nameofmd',
+				   'value'=>'CHtml::link("<span style=color:blue>$data[response]<span>",Yii::app()->createUrl("response/view", array("id"=>$data["id"])))',
+                   
+                   //'htmlOptions'=>array('width'=>'40'),
+                  
+           ),
+      
 	),
 )); ?>
 
