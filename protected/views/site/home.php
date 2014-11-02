@@ -192,12 +192,7 @@
                         </div>
                     -->
                         <!-- /.panel-body -->
-                    </div>
-            
-                  
-                </div>
-                <!-- /.col-lg-4 -->
-            </div>
+                    
 
     <!--<script src="<?php //echo Yii::app()->theme->baseUrl; ?>/js/plugins/morris/raphael.min.js"></script>
     <script src="<?php //echo Yii::app()->theme->baseUrl; ?>/js/plugins/morris/morris.min.js"></script>
