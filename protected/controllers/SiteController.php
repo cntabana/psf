@@ -134,7 +134,7 @@ public function actionHome()
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
 		    //$this->redirect(Yii::app()->user->returnUrl);
-			$this->redirect(Yii::app()->user->returnUrl.'?r=site/home');
+			$this->redirect(Yii::app()->user->returnUrl.'?r=site/index');
 			 //$this->render('/request/home',array('model'=>$model,));
 		}
 		// display the login form

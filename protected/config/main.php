@@ -9,7 +9,7 @@ Yii::setPathOfAlias('editable', dirname(__FILE__).'/../extensions/editable');
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Private Sector Federation',
-	'theme' => 'bootstrap',
+	'theme' => 'bootstrap1',
 
 	// preloading 'log' component
 	// preloading 'log' component
