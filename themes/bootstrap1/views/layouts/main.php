@@ -47,7 +47,7 @@ if(yii::app()->user->group == 2){
         array(
             'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
-                array('label'=>'Home', 'url'=>array('/site/index'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Home', 'url'=>array('/site/home'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'User Management', 'url'=>array('/user'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Departments', 'url'=>array('/departments'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Requests', 'url'=>array('/request'), 'visible'=>!Yii::app()->user->isGuest),
