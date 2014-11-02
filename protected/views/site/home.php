@@ -123,7 +123,16 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div id="morris-area-chart"></div>
+                            <div id="morris-area-chart">
+                            <?php 
+                                 $this->widget('application.extensions.EFlot.EFlotGraphWidget', 
+                                array(
+                                  
+                                )
+                                
+                            );
+                            ?>
+                            </div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -137,6 +146,7 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
+
                             <div class="list-group">
                                 <a href="#" class="list-group-item">
                                     <i class="fa fa-comment fa-fw"></i> New Comment

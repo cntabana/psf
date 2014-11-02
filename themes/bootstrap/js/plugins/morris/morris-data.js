@@ -4,58 +4,58 @@ $(function() {
         element: 'morris-area-chart',
         data: [{
             period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
+            open: 2666,
+            processed: null,
+            closed: 2647
         }, {
             period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
+            open: 2778,
+            processed: 2294,
+            closed: 2441
         }, {
             period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
+            open: 4912,
+            processed: 1969,
+            closed: 2501
         }, {
             period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
+            open: 3767,
+            processed: 3597,
+            closed: 5689
         }, {
             period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
+            open: 6810,
+            processed: 1914,
+            closed: 2293
         }, {
             period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
+            open: 5670,
+            processed: 4293,
+            closed: 1881
         }, {
             period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
+            open: 4820,
+            processed: 3795,
+            closed: 1588
         }, {
             period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
+            open: 15073,
+            processed: 5967,
+            closed: 5175
         }, {
             period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
+            open: 10687,
+            processed: 4460,
+            closed: 2028
         }, {
             period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
+            open: 8432,
+            processed: 5713,
+            closed: 1791
         }],
         xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        ykeys: ['open', 'processed', 'closed'],
+        labels: ['Open Requests', 'Processed Requests', 'Closed Request'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
