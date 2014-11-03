@@ -243,6 +243,7 @@ else{
         </div><!-- page -->
 
         <div class="clear"></div>
+        <br>
 
 </body>
 </html>
